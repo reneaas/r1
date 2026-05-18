@@ -79,6 +79,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=30eed71c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=4d5252b1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
@@ -599,15 +600,284 @@
 <div class="admonition exercise">
 <p class="admonition-title">Oppgave 1</p>
 <p>Deriver funksjonene.</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<div class="math notranslate nohighlight">
+\[
+f(x) = x^4 - 2e^{3x} + \ln x
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+f'(x) = 4x^3 - 6e^{3x} + \frac{1}{x}
+\]</div>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<div class="math notranslate nohighlight">
+\[
+g(x) = x^7 e^x
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+g'(x) = e^x x^6 (x + 7)
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-35 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi bruker produktregelen for derivasjon:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+g'(x) &amp;= (x^7)' \cdot e^x + x^7 \cdot (e^x)'  \\
+\\
+&amp;= 7x^6 \cdot e^x + x^7 \cdot e^x \\
+\\
+&amp;= e^x (x^7 + 7x^6) \\
+\\
+&amp;= e^x x^6 (x + 7)
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+c)</div>
+<div class="part-body docutils container">
+<div class="math notranslate nohighlight">
+\[
+h(x) = \dfrac{\ln (2x)}{x^2}
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+h'(x) = \dfrac{2 \ln (2x) - 1}{x^3}
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-66 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi bruker kvotientregelen for derivasjon:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+h'(x) &amp;= \dfrac{(x^2)' \cdot \ln (2x) - x^2 \cdot \left[\ln (2x)\right]'}{(x^2)^2} \\
+\\
+&amp;= \dfrac{2x \cdot \ln (2x) - x^2 \cdot \dfrac{1}{2x} \cdot 2}{x^4} \\
+\\
+&amp;= \dfrac{2x \cdot \ln (2x) - x}{x^4} \\
+\\
+&amp;= \dfrac{2 \ln (2x) - 1}{x^3}
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise">
 <p class="admonition-title">Oppgave 2</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Løs likningen</p>
+<div class="math notranslate nohighlight">
+\[
+4^x - 2 \cdot 2^x = 8
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+x = 2
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-111 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi kan først skrive om likningen til</p>
+<div class="math notranslate nohighlight">
+\[
+2^{2x} - 2 \cdot 2^x - 8 = 0
+\]</div>
+<p>Deretter setter vi <span class="math notranslate nohighlight">\(u = 2^x\)</span> som gir oss andregradslikningen</p>
+<div class="math notranslate nohighlight">
+\[
+u^2 - 2u - 8 = 0
+\]</div>
+<p>Vi løser denne med <span class="math notranslate nohighlight">\(abc\)</span>-formelen som gir</p>
+<div class="math notranslate nohighlight">
+\[
+u = \dfrac{2 \pm \sqrt{4 + 32}}{2} = \dfrac{2 \pm \sqrt{36}}{2} = \dfrac{2 \pm 6}{2} = 1 \pm 3    
+\]</div>
+<p>Altså får vi at</p>
+<div class="math notranslate nohighlight">
+\[
+2^x = -2 \or 2^x = 4
+\]</div>
+<p>Den første av de to er en ugyldig likning. Dermed blir den eneste løsningen av likningen</p>
+<div class="math notranslate nohighlight">
+\[
+2^x = 4 \liff x = 2. 
+\]</div>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Løs likningen</p>
+<div class="math notranslate nohighlight">
+\[
+\log_2 (x) + \log_2 (x - 3) = 2
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+x = 4
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-160 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi kan bruke logaritmeregler for å skrive om venstresiden av likningen:</p>
+<div class="math notranslate nohighlight">
+\[
+\log_2[x(x - 3)] = 2
+\]</div>
+<p>Det betyr at</p>
+<div class="math notranslate nohighlight">
+\[
+x(x - 3) = 2^2 \liff x^2 - 3x - 4 = 0
+\]</div>
+<p>Vi løser denne andregradslikningen med <span class="math notranslate nohighlight">\(abc\)</span>-formelen som gir</p>
+<div class="math notranslate nohighlight">
+\[
+x = \dfrac{3 \pm \sqrt{9 + 16}}{2} = \dfrac{3 \pm 5}{2} 
+\]</div>
+<p>som betyr at</p>
+<div class="math notranslate nohighlight">
+\[
+x = 4 \or x = -1
+\]</div>
+<p>Løsningen kan ikke være negativ fordi da ville <span class="math notranslate nohighlight">\(\log_2 (x)\)</span> være udefinert. Dermed er den eneste løsningen av likningen</p>
+<div class="math notranslate nohighlight">
+\[
+x = 4.
+\]</div>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise">
 <p class="admonition-title">Oppgave 3</p>
 <p>Gitt punktene <span class="math notranslate nohighlight">\(A(-2, 1)\)</span>, <span class="math notranslate nohighlight">\(B(2, -1)\)</span>, <span class="math notranslate nohighlight">\(C(4, 2)\)</span> og <span class="math notranslate nohighlight">\(D(t, 3)\)</span> der <span class="math notranslate nohighlight">\(t \in \real\)</span>.</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Avgjør om <span class="math notranslate nohighlight">\(\lvec{AB} \perp \lvec{BC}\)</span>.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<p><span class="math notranslate nohighlight">\(\lvec{AB} \not\perp \lvec{BC}\)</span></p>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-210 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi finner først vektorene <span class="math notranslate nohighlight">\(\lvec{AB}\)</span> og <span class="math notranslate nohighlight">\(\lvec{BC}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\lvec{AB} = [2 - (-2), -1 - 1] = [4, -2]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lvec{BC} = [4 - 2, 2 - (-1)] = [2, 3]
+\]</div>
+<p>Deretter finner vi skalarproduktet av de to vektorene:</p>
+<div class="math notranslate nohighlight">
+\[
+\lvec{AB} \cdot \lvec{BC} = 4 \cdot 2 + (-2) \cdot 3 = 8 - 6 = 2
+\]</div>
+<p>Siden skalarproduktet ikke er lik <span class="math notranslate nohighlight">\(0\)</span>, så er <span class="math notranslate nohighlight">\(\lvec{AB} \not\perp \lvec{BC}\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Bruk vektorregning til å bestemme <span class="math notranslate nohighlight">\(t\)</span> slik at <span class="math notranslate nohighlight">\(\lvec{AB} \perp \lvec{AD}\)</span>.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+t = -1.
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-243 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi har vektoren <span class="math notranslate nohighlight">\(\lvec{AB} = [4, -2]\)</span> fra oppgave <strong>a</strong>. Vi må også finne vektoren <span class="math notranslate nohighlight">\(\lvec{AD}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\lvec{AD} = [t - (-2), 3 - 1] = [t + 2, 2]
+\]</div>
+<p>For at <span class="math notranslate nohighlight">\(\lvec{AB} \perp \lvec{AD}\)</span>, så må skalarproduktet av de to vektorene være lik <span class="math notranslate nohighlight">\(0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\lvec{AB} \cdot \lvec{AD} = 4(t + 2) + (-2) \cdot 2 = 4t + 8 - 4 = 4t + 4
+\]</div>
+<p>Altså må</p>
+<div class="math notranslate nohighlight">
+\[
+4t + 4 = 0 \liff t = -1.
+\]</div>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+c)</div>
+<div class="part-body docutils container">
+<p>Bestem <span class="math notranslate nohighlight">\(t\)</span> slik at <span class="math notranslate nohighlight">\(\vec{AB} \parallel \vec{CD}\)</span>.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+t = 2
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-276 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Fra oppgave <strong>a</strong> har vi at</p>
+<div class="math notranslate nohighlight">
+\[
+\lvec{AB} = [4, -2]
+\]</div>
+<p>Vi finner også vektoren <span class="math notranslate nohighlight">\(\lvec{CD}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\lvec{CD} = [t - 4, 3 - 2] = [t - 4, 1]
+\]</div>
+<p>For at de to vektorene skal være parallelle, må forholdstallet mellom vektorkomponentene være like. Det vil si</p>
+<div class="math notranslate nohighlight">
+\[
+\dfrac{4}{t - 4} = \dfrac{-2}{1} \liff 4 = -2(t - 4) \liff 4 = -2t + 8 \liff -2t = -4 \liff t = 2.
+\]</div>
+<p>Altså må <span class="math notranslate nohighlight">\(t = 2\)</span> for at <span class="math notranslate nohighlight">\(\lvec{AB} \parallel \lvec{CD}\)</span>.</p>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise">
@@ -621,7 +891,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-05-17T13:38:29.740576</dc:date>
+    <dc:date>2026-05-18T13:58:42.151673</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -634,8 +904,8 @@
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_c1a0fcaa8b5f_b2ac57_figure_1">
-  <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_1">
+ <g id="cpl_c1a0fcaa8b5f_ed1ae8_figure_1">
+  <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -644,8 +914,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_c1a0fcaa8b5f_b2ac57_axes_1">
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_2">
+  <g id="cpl_c1a0fcaa8b5f_ed1ae8_axes_1">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_2">
     <path d="M 10.8 316.431764 
 L 447 316.431764 
 L 447 23.55884 
@@ -654,9 +924,9 @@ L 10.8 316.431764
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_PolyCollection_1">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_PolyCollection_1">
     <defs>
-     <path id="cpl_c1a0fcaa8b5f_b2ac57_m554e43a776" d="M 95.775944 -308.728755 
+     <path id="cpl_c1a0fcaa8b5f_ed1ae8_m4c471ecf51" d="M 95.775944 -308.728755 
 L 95.775944 -308.728755 
 L 95.78732 -308.728754 
 L 95.798696 -308.728754 
@@ -33429,13 +33699,13 @@ L 95.775944 -232.619826
 z
 "/>
     </defs>
-    <g clip-path="url(#cpl_c1a0fcaa8b5f_b2ac57_p0747447a39)">
-     <use xlink:href="#cpl_c1a0fcaa8b5f_b2ac57_m554e43a776" x="0" y="345.6" style="fill: #0072b2; fill-opacity: 0.2"/>
+    <g clip-path="url(#cpl_c1a0fcaa8b5f_ed1ae8_p097b59458e)">
+     <use xlink:href="#cpl_c1a0fcaa8b5f_ed1ae8_m4c471ecf51" x="0" y="345.6" style="fill: #0072b2; fill-opacity: 0.2"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_PolyCollection_2">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_PolyCollection_2">
     <defs>
-     <path id="cpl_c1a0fcaa8b5f_b2ac57_md08d40b0e7" d="M 282.149623 -232.619826 
+     <path id="cpl_c1a0fcaa8b5f_ed1ae8_mc909aa98db" d="M 282.149623 -232.619826 
 L 282.149623 -232.619826 
 L 282.154498 -232.615047 
 L 282.159373 -232.610268 
@@ -66208,21 +66478,21 @@ L 282.149623 -42.480642
 z
 "/>
     </defs>
-    <g clip-path="url(#cpl_c1a0fcaa8b5f_b2ac57_p0747447a39)">
-     <use xlink:href="#cpl_c1a0fcaa8b5f_b2ac57_md08d40b0e7" x="0" y="345.6" style="fill: #0072b2; fill-opacity: 0.2"/>
+    <g clip-path="url(#cpl_c1a0fcaa8b5f_ed1ae8_p097b59458e)">
+     <use xlink:href="#cpl_c1a0fcaa8b5f_ed1ae8_mc909aa98db" x="0" y="345.6" style="fill: #0072b2; fill-opacity: 0.2"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_3">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_3">
     <path d="M 95.775944 303.119358 
 L 282.149623 303.119358 
 L 282.149623 112.980174 
 L 95.775944 112.980174 
 L 95.775944 303.119358 
 z
-" clip-path="url(#cpl_c1a0fcaa8b5f_b2ac57_p0747447a39)" style="fill: none; opacity: 0"/>
+" clip-path="url(#cpl_c1a0fcaa8b5f_ed1ae8_p097b59458e)" style="fill: none; opacity: 0"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_matplotlib.axis_1">
-    <g id="cpl_c1a0fcaa8b5f_b2ac57_text_1">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_matplotlib.axis_1">
+    <g id="cpl_c1a0fcaa8b5f_ed1ae8_text_1">
      <!-- $x$ -->
      <g transform="translate(431.478463 326.491157) scale(0.28 -0.28)">
       <defs>
@@ -66264,8 +66534,8 @@ z
      </g>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_matplotlib.axis_2">
-    <g id="cpl_c1a0fcaa8b5f_b2ac57_text_2">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_matplotlib.axis_2">
+    <g id="cpl_c1a0fcaa8b5f_ed1ae8_text_2">
      <!-- $y$ -->
      <g transform="translate(78.457981 18.132959) scale(0.28 -0.28)">
       <defs>
@@ -66307,31 +66577,31 @@ z
      </g>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_line2d_1">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_line2d_1">
     <defs>
-     <path id="cpl_c1a0fcaa8b5f_b2ac57_m6fd83d942e" d="M 3 0 
+     <path id="cpl_c1a0fcaa8b5f_ed1ae8_m630289ded6" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_c1a0fcaa8b5f_b2ac57_m6fd83d942e" x="447" y="303.119358" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_c1a0fcaa8b5f_ed1ae8_m630289ded6" x="447" y="303.119358" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_line2d_2">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_line2d_2">
     <defs>
-     <path id="cpl_c1a0fcaa8b5f_b2ac57_m11b0cc3079" d="M 0 -3 
+     <path id="cpl_c1a0fcaa8b5f_ed1ae8_me722363f48" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_c1a0fcaa8b5f_b2ac57_m11b0cc3079" x="95.775944" y="23.55884" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_c1a0fcaa8b5f_ed1ae8_me722363f48" x="95.775944" y="23.55884" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_line2d_3">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_line2d_3">
     <path d="M 95.775944 36.871245 
 L 103.462897 36.982235 
 L 111.14985 37.315482 
@@ -66389,37 +66659,37 @@ L 361.812787 292.514855
 L 362.007805 300.177659 
 L 362.024056 303.119358 
 L 362.024056 303.119358 
-" clip-path="url(#cpl_c1a0fcaa8b5f_b2ac57_p0747447a39)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_c1a0fcaa8b5f_ed1ae8_p097b59458e)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_line2d_4">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_line2d_4">
     <path d="M 95.775944 303.119358 
 L 282.149623 303.119358 
 L 282.149623 112.980174 
 L 95.775944 112.980174 
 L 95.775944 303.119358 
-" clip-path="url(#cpl_c1a0fcaa8b5f_b2ac57_p0747447a39)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_c1a0fcaa8b5f_ed1ae8_p097b59458e)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_4">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_4">
     <path d="M 95.775944 316.431764 
 L 95.775944 23.55884 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_5">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_5">
     <path d="M 447 316.431764 
 L 447 23.55884 
 " style="fill: none"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_6">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_6">
     <path d="M 10.8 303.119358 
 L 447 303.119358 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_patch_7">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_patch_7">
     <path d="M 10.8 23.55884 
 L 447 23.55884 
 " style="fill: none"/>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_text_3">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_text_3">
     <!-- $O$ -->
     <g transform="translate(68.744895 326.884251) scale(0.28 -0.28)">
      <defs>
@@ -66442,7 +66712,7 @@ z
      <use xlink:href="#CMMI12-4f" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_text_4">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_text_4">
     <!-- $A(x, 0)$ -->
     <g transform="translate(241.757461 328.408883) scale(0.28 -0.28)">
      <defs>
@@ -66549,7 +66819,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(253.234772 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_text_5">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_text_5">
     <!-- $B$ -->
     <g transform="translate(288.30648 103.161199) scale(0.28 -0.28)">
      <defs>
@@ -66592,7 +66862,7 @@ z
      <use xlink:href="#CMMI12-42" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_c1a0fcaa8b5f_b2ac57_text_6">
+   <g id="cpl_c1a0fcaa8b5f_ed1ae8_text_6">
     <!-- $C$ -->
     <g transform="translate(70.077316 119.953133) scale(0.28 -0.28)">
      <defs>
@@ -66625,7 +66895,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_c1a0fcaa8b5f_b2ac57_p0747447a39">
+  <clipPath id="cpl_c1a0fcaa8b5f_ed1ae8_p097b59458e">
    <rect x="10.8" y="23.55884" width="436.2" height="292.872924"/>
   </clipPath>
  </defs>
@@ -66637,7 +66907,109 @@ z
 f(x) = \sqrt{4 - x^2} \qfor 0 \leq x \leq 2.
 \]</div>
 <p>Firkanten <span class="math notranslate nohighlight">\(OABC\)</span> er et rektangel, der <span class="math notranslate nohighlight">\(O\)</span> er origo, <span class="math notranslate nohighlight">\(A\)</span> ligger på <span class="math notranslate nohighlight">\(x\)</span>-aksen, <span class="math notranslate nohighlight">\(B\)</span> ligger på kvartsirkelen og <span class="math notranslate nohighlight">\(C\)</span> ligger på <span class="math notranslate nohighlight">\(y\)</span>-aksen.</p>
-<div style="clear: both;"></div></div>
+<div style="clear: both;"></div><div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Bestem en eksakt verdi for arealet når <span class="math notranslate nohighlight">\(x = 1\)</span>.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{fargelagt} = \pi - \sqrt{3}
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-365 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Arealet av det fargelagte området blir</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{fargelagt} = T_\mathrm{kvartsirkel} - T_\mathrm{rektangel}
+\]</div>
+<p>Arealet av kvartsirkelen er gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{kvartsirkel} = \dfrac{1}{4} \pi \cdot 2^2 = \pi
+\]</div>
+<p>Arealet av rektangelet er gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{rektangel} = 1 \cdot f(1) = 1 \cdot \sqrt{4 - 1^2} = 1 \cdot \sqrt{3} = \sqrt{3}
+\]</div>
+<p>Altså er arealet av det fargelagte området lik</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{fargelagt} = \pi - \sqrt{3}
+\]</div>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Bestem det minste arealet det fargelagte området kan ha.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{minst} = \pi - 2
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-406 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Arealet <span class="math notranslate nohighlight">\(T(x)\)</span> av det fargelagte området vil være gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+T(x) = \pi - xf(x) = \pi - x\sqrt{4 - x^2}
+\]</div>
+<p>Vi deriverer <span class="math notranslate nohighlight">\(T(x)\)</span> for å finne kritiske punkter:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+T'(x) &amp;= -\sqrt{4 - x^2} - x \cdot \dfrac{-2x}{2\sqrt{4 - x^2}} \\
+\\
+&amp;= -\sqrt{4 - x^2} + \dfrac{x^2}{\sqrt{4 - x^2}} \\
+\end{align*}
+\end{split}\]</div>
+<p>Så løser vi <span class="math notranslate nohighlight">\(T'(x) = 0\)</span> som gir</p>
+<div class="math notranslate nohighlight">
+\[
+T'(x) = 0 \liff -\sqrt{4 - x^2} + \dfrac{x^2}{\sqrt{4 - x^2}} = 0
+\]</div>
+<p>som vi kan skrive om til</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{4 - x^2} = \dfrac{x^2}{\sqrt{4 - x^2}}
+\]</div>
+<p>Vi ganger med <span class="math notranslate nohighlight">\(\sqrt{4 - x^2}\)</span> på begge sider av likningen som gir oss</p>
+<div class="math notranslate nohighlight">
+\[
+4 - x^2 = x^2 \liff 4 = 2x^2 \liff x^2 = 2 \liff x = \sqrt{2}.
+\]</div>
+<p>Arealet i dette punktet vil være</p>
+<div class="math notranslate nohighlight">
+\[
+T(\sqrt{2}) = \pi - \sqrt{2} \cdot \sqrt{4 - 2} = \pi - \sqrt{2} \cdot \sqrt{2} = \pi - 2.
+\]</div>
+<p>Vi sjekker at arealet er større i endepunktene for å være sikre på at dette er det minste arealet:</p>
+<div class="math notranslate nohighlight">
+\[
+T(0) = \pi - 0 \cdot \sqrt{4 - 0^2} = \pi
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+T(2) = \pi - 2 \cdot \sqrt{4 - 2^2} = \pi
+\]</div>
+<p>Altså er det minste arealet det fargelagte området kan ha gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+T_\mathrm{minst} = \pi - 2.
+\]</div>
+</div>
+</div>
+</div>
+</div>
 <hr class="docutils" />
 <div class="admonition exercise">
 <p class="admonition-title">Oppgave 5</p>
@@ -66699,6 +67071,74 @@ a = 5 \and b = 3.
 <hr class="docutils" />
 <div class="admonition exercise">
 <p class="admonition-title">Oppgave 6</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Bestem grenseverdien</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\to 4} \dfrac{x - 4}{2 - \sqrt{x}}
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\to 4} \dfrac{x - 4}{2 - \sqrt{x}} = -4
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-562 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi prøver å sette inn <span class="math notranslate nohighlight">\(x = 4\)</span> direkte i uttrykket:</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\to 4} \dfrac{x - 4}{2 - \sqrt{x}} = \dfrac{4 - 4}{2 - \sqrt{4}} = \dfrac{0}{2 - 2} = \dfrac{0}{0}
+\]</div>
+<p>Vi får et ubestemt uttrykk på formen <span class="math notranslate nohighlight">\(0/0\)</span> så da kan vi bruke L’Hôpitals regel:</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\to 4} \dfrac{x - 4}{2 - \sqrt{x}} \overset{[\frac{0}{0}]}{=} \lim_{x\to 4} \dfrac{1}{-\dfrac{1}{2\sqrt{x}}} = \lim_{x\to 4} -2\sqrt{x} = -4.
+\]</div>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Bestem <span class="math notranslate nohighlight">\(a\)</span> slik at grenseverdien nedenfor eksisterer.</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\to a} \dfrac{8 - \sqrt{ax}}{x - a}
+\]</div>
+<p>Bestem grenseverdien for denne verdien av <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+a = 8 \and \lim_{x\to a} \dfrac{8 - \sqrt{ax}}{x - a} = -\dfrac{1}{2}.
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-596 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Setter vi inn <span class="math notranslate nohighlight">\(x = a\)</span> i uttrykket, så får vi <span class="math notranslate nohighlight">\(0\)</span> i nevneren. Den eneste måten grenseverdien kan eksistere er dersom vi også får <span class="math notranslate nohighlight">\(0\)</span> i telleren:</p>
+<div class="math notranslate nohighlight">
+\[
+8 - \sqrt{a^2} = 8 - \abs{a} = 0 \liff \abs{a} = 8
+\]</div>
+<p>Vi må forutsette at <span class="math notranslate nohighlight">\(a &gt; 0\)</span>, så den eneste muligheten er</p>
+<div class="math notranslate nohighlight">
+\[
+a = 8.
+\]</div>
+<p>Grenseverdien blir da</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\to 8} \dfrac{8 - \sqrt{8x}}{x - 8} \overset{[\frac{0}{0}]}{=} \lim_{x\to 8} \dfrac{-\dfrac{1}{2\sqrt{8x}} \cdot 8}{1} = \lim_{x\to 8} -\dfrac{4}{\sqrt{8x}} = -\dfrac{4}{\sqrt{64}} = -\dfrac{4}{8} = -\dfrac{1}{2}.
+\]</div>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise">
@@ -66709,11 +67149,78 @@ a = 5 \and b = 3.
 <li><p><span class="math notranslate nohighlight">\(\abs{\vec{b}} = 5\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\cos \varphi = \dfrac{1}{2}\)</span> der <span class="math notranslate nohighlight">\(\varphi\)</span> er vinkelen mellom <span class="math notranslate nohighlight">\(\vec{a}\)</span> og <span class="math notranslate nohighlight">\(\vec{b}\)</span>.</p></li>
 </ul>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Bestem <span class="math notranslate nohighlight">\(\vec{a} \cdot \vec{b}\)</span>.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{a} \cdot \vec{b} = 10.
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-645 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Den geometriske formelen for skalarproduktet av to vektorer er gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{a} \cdot \vec{b} = \abs{\vec{a}} \cdot \abs{\vec{b}} \cdot \cos \varphi
+\]</div>
+<p>Ergo får vi at</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{a} \cdot \vec{b} = 4 \cdot 5 \cdot \dfrac{1}{2} = 10.
+\]</div>
+</div>
+</div>
+</div>
 <p>En vektor <span class="math notranslate nohighlight">\(\vec{p}\)</span> er gitt ved</p>
 <div class="math notranslate nohighlight">
 \[
 \vec{p} = 2\vec{a} + t \cdot \vec{b}
 \]</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Bestem <span class="math notranslate nohighlight">\(t\)</span> slik at <span class="math notranslate nohighlight">\(\abs{\vec{p}}\)</span> er minst mulig.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+t = -\dfrac{4}{5}.
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-677 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi ønsker å gjøre <span class="math notranslate nohighlight">\(\abs{\vec{p}}\)</span> minst mulig. Det kan vi gjøre ved å gjøre <span class="math notranslate nohighlight">\(\abs{\vec{p}}^2\)</span> minst mulig. Vi har at</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\abs{\vec{p}}^2 &amp;= \vec{p} \cdot \vec{p} \\
+\\
+&amp;= (2\vec{a} + t \cdot \vec{b}) \cdot (2\vec{a} + t \cdot \vec{b}) \\
+\\
+&amp;= 4\vec{a} \cdot \vec{a} + 4t \cdot \vec{a} \cdot \vec{b} + t^2 \cdot \vec{b} \cdot \vec{b} \\
+\\
+&amp;= 4 \cdot 16 + 4t \cdot 10 + t^2 \cdot 25 \\
+\\
+&amp;= 64 + 40t + 25t^2 \\
+\\
+&amp;= 25t^2 + 40t + 64
+\end{align*}
+\end{split}\]</div>
+<p>Vi deriverer og setter lik <span class="math notranslate nohighlight">\(0\)</span> for å finne kritiske punkter:</p>
+<div class="math notranslate nohighlight">
+\[
+(25t^2 + 40t + 64)' = 0 \liff 50t + 40 = 0 \liff t = -\dfrac{4}{5}.
+\]</div>
+<p>Altså blir <span class="math notranslate nohighlight">\(\abs{\vec{p}}\)</span> minst mulig når <span class="math notranslate nohighlight">\(t = -\dfrac{4}{5}\)</span>.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="del-2-2-timer-med-hjelpemidler">
@@ -66723,11 +67230,68 @@ a = 5 \and b = 3.
 <p>Tabellen nedenfor viser hvor mange prosent strøm en telefon som opprinnelig var tom for strøm har <span class="math notranslate nohighlight">\(t\)</span> minutter etter at den blir koblet til laderen.</p>
 <div class="munchboka-table-container docutils container">
 <div class="munchboka-table-frame munchboka-table-frame--align-center"><div class="munchboka-table-scroll"><table class="munchboka-table munchboka-table--transpose" data-katex="true"><tbody><tr><th scope="row" class="munchboka-table-label munchboka-table-align-center">Tid (minutter)</th><td class="munchboka-table-align-center">$5$</td><td class="munchboka-table-align-center">$10$</td><td class="munchboka-table-align-center">$15$</td><td class="munchboka-table-align-center">$20$</td><td class="munchboka-table-align-center">$40$</td><td class="munchboka-table-align-center">$60$</td></tr><tr><th scope="row" class="munchboka-table-label munchboka-table-align-center">Batteristrøm (prosent)</th><td class="munchboka-table-align-center">$7$</td><td class="munchboka-table-align-center">$11$</td><td class="munchboka-table-align-center">$17$</td><td class="munchboka-table-align-center">$25$</td><td class="munchboka-table-align-center">$72$</td><td class="munchboka-table-align-center">$94$</td></tr></tbody></table></div></div></div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Lag en modell for batteristrømmen <span class="math notranslate nohighlight">\(B(t)\)</span> (prosent), <span class="math notranslate nohighlight">\(t\)</span> minutter etter at telefonen blir koblet i laderen på formen</p>
+<div class="math notranslate nohighlight">
+\[
+B(t) = \dfrac{c}{1 + a\cdot e^{-b\cdot t}}
+\]</div>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+B(t) = \dfrac{98.5}{1 + 22.5 e^{-0.1 \cdot t}}
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-749 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Vi legger inn datapunktene i et regneark:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/regneark.png"><img alt="../../../_images/regneark.png" class="no-click adaptive-figure" src="../../../_images/regneark.png" style="width: 40%;" />
+</a>
+</figure>
+<p>Deretter bruker vi <img src="../../../_static/munchboka/icons/ggb/mode_regression.svg" alt="GeoGebra mode_regression icon" class="inline-image" /> til å lage en <em>logistisk</em> regresjonsmodell for datapunktene:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/regresjonsmodell.png"><img alt="../../../_images/regresjonsmodell.png" class="no-click adaptive-figure" src="../../../_images/regresjonsmodell.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså er en god logistisk modell for batteristrømmen til telefonen gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+B(t) = \dfrac{98.5}{1 + 22.5 e^{-0.1 \cdot t}}
+\]</div>
+</div>
+</div>
+</div>
 <p>I resten av oppgaven skal du bruke modellen</p>
 <div class="math notranslate nohighlight">
 \[
 B(t) = \dfrac{100}{1 + 22 \cdot e^{-0.1 \cdot t}}
 \]</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Ved hvilket tidspunkt lades telefonen raskest ifølge modellen?</p>
+<p>Hvor raskt øker batteriprosenten på dette tidspunktet?</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<p>ca. <span class="math notranslate nohighlight">\(2.5~\%\)</span> per minutt etter <span class="math notranslate nohighlight">\(30.9\)</span> minutter.</p>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-798 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Siden modellen er en logistisk modell, vil <span class="math notranslate nohighlight">\(B(t) = 100/2 = 50\)</span> gi oss tidspunktet hvor telefonen lades raskest. Vi kan deretter finne hvor raskt batteriprosenten øker ved å regne ut <span class="math notranslate nohighlight">\(B'(t)\)</span> i dette tidspunktet:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol15.png"><img alt="../../../_images/sol15.png" class="no-click adaptive-figure" src="../../../_images/sol15.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså øker batteriprosenten raskest med ca. <span class="math notranslate nohighlight">\(2.5~\%\)</span> per minutt etter <span class="math notranslate nohighlight">\(30.9\)</span> minutter.</p>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise exercise-aids">
@@ -66737,7 +67301,64 @@ B(t) = \dfrac{100}{1 + 22 \cdot e^{-0.1 \cdot t}}
 \[
 f(x) = \dfrac{1}{3}x^3 - 2x^2 + 3x + 1
 \]</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Bestem det største intervallet <span class="math notranslate nohighlight">\(I = [a, b]\)</span> der <span class="math notranslate nohighlight">\(f\)</span> har en omvendt funksjon og <span class="math notranslate nohighlight">\(2 \in I\)</span></p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<div class="math notranslate nohighlight">
+\[
+I = [1, 3].
+\]</div>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-845 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>For at <span class="math notranslate nohighlight">\(f\)</span> skal ha en omvendt funksjon på intervallet <span class="math notranslate nohighlight">\(I\)</span>, må vi sørge for at det ikke finnes noen ekstremalpunkter på innsiden av intervallet. Vi løser derfor <span class="math notranslate nohighlight">\(f'(x) = 0\)</span>:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol16.png"><img alt="../../../_images/sol16.png" class="no-click adaptive-figure" src="../../../_images/sol16.png" style="width: 70%;" />
+</a>
+</figure>
+<p>som gir <span class="math notranslate nohighlight">\(x = 1\)</span> og <span class="math notranslate nohighlight">\(x = 3\)</span>. Vi må sjekke at dette er ekstremalpunkter som vi kan gjøre med andrederiverttesten:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol21.png"><img alt="../../../_images/sol21.png" class="no-click adaptive-figure" src="../../../_images/sol21.png" style="width: 70%;" />
+</a>
+</figure>
+<p>I begge tilfeller er <span class="math notranslate nohighlight">\(f''(x) \neq 0\)</span> som betyr at begge punkter er ekstremalpunkter. Vi skal også sørge for at <span class="math notranslate nohighlight">\(2 \in I\)</span> som betyr at det største intervallet som sørger for at <span class="math notranslate nohighlight">\(f\)</span> har en omvendt funksjon og <span class="math notranslate nohighlight">\(2 \in I\)</span> er gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+I = [1, 3].
+\]</div>
+</div>
+</div>
+</div>
 <p>La <span class="math notranslate nohighlight">\(g\)</span> være den omvendte funksjonen til <span class="math notranslate nohighlight">\(f\)</span>. Det finnes to punkter på grafen til <span class="math notranslate nohighlight">\(g\)</span> der <span class="math notranslate nohighlight">\(g'(x) = -\dfrac{4}{3}\)</span>.</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Finn koordinatene til disse punktene.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<p><span class="math notranslate nohighlight">\(\left(\dfrac{17}{8}, \dfrac{3}{2}\right)\)</span> og <span class="math notranslate nohighlight">\(\left(\dfrac{29}{24}, \dfrac{5}{2}\right)\)</span></p>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-886 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>I punktet <span class="math notranslate nohighlight">\((y, x)\)</span> på grafen til <span class="math notranslate nohighlight">\(g\)</span> vil tilsvare et punkt <span class="math notranslate nohighlight">\((x, y)\)</span> på grafen til <span class="math notranslate nohighlight">\(f\)</span> siden de er omvendte funksjoner. Da har vi også at</p>
+<div class="math notranslate nohighlight">
+\[
+f'(x) = \dfrac{1}{g'(y)} = \dfrac{1}{-\dfrac{4}{3}} = -\dfrac{3}{4}.
+\]</div>
+<p>Vi løser derfor <span class="math notranslate nohighlight">\(f'(x) = -\dfrac{3}{4}\)</span> som gir oss</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol17.png"><img alt="../../../_images/sol17.png" class="no-click adaptive-figure" src="../../../_images/sol17.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså er punktene <span class="math notranslate nohighlight">\(\left(\dfrac{3}{2}, \dfrac{17}{8}\right)\)</span> og <span class="math notranslate nohighlight">\(\left(\dfrac{5}{2}, \dfrac{29}{24}\right)\)</span> punkter på grafen til <span class="math notranslate nohighlight">\(f\)</span> der <span class="math notranslate nohighlight">\(f'(x) = -\dfrac{3}{4}\)</span>. Det betyr at punktene <span class="math notranslate nohighlight">\(\left(\dfrac{17}{8}, \dfrac{3}{2}\right)\)</span> og <span class="math notranslate nohighlight">\(\left(\dfrac{29}{24}, \dfrac{5}{2}\right)\)</span> er punkter på grafen til <span class="math notranslate nohighlight">\(g\)</span> der <span class="math notranslate nohighlight">\(g'(x) = -\dfrac{4}{3}\)</span>.</p>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise exercise-aids">
@@ -66749,7 +67370,77 @@ f(x) = \dfrac{1}{3}x^3 - 2x^2 + 3x + 1
 \vec{r}(t) = [17t, -5t^2 + 29t + 20]
 \]</div>
 <p>Her er <span class="math notranslate nohighlight">\(t\)</span> tiden (målt i sekunder) etter at ballen blir slått ut fra taket, og koordinatene er gitt i meter. Førstekoordinaten er posisjon i horisontal retning, og andrekoordinaten er høyden til ballen over bakkenivå.</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+a)</div>
+<div class="part-body docutils container">
+<p>Hvor lang tid tar det før golfballen treffer bakken?</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<p>Ca. <span class="math notranslate nohighlight">\(6.42\)</span> sekunder.</p>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-936 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Golfballen treffer bakken når <span class="math notranslate nohighlight">\(y\)</span>-komponenten er lik <span class="math notranslate nohighlight">\(0\)</span> så vi løser <span class="math notranslate nohighlight">\(y(t) = 0\)</span> med CAS:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol18.png"><img alt="../../../_images/sol18.png" class="no-click adaptive-figure" src="../../../_images/sol18.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså treffer golfballen bakken etter ca. <span class="math notranslate nohighlight">\(6.42\)</span> sekunder.</p>
+</div>
+</div>
+</div>
+<div class="part docutils container">
+<div class="part-label docutils container">
+b)</div>
+<div class="part-body docutils container">
+<p>Bestem banefarten til golfballen i det øyeblikket den blir slått ut fra taket.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<p>ca. <span class="math notranslate nohighlight">\(33.6~\mathrm{m/s}\)</span></p>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-958 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Banefarten til golfballen idet den blir slått ut er gitt ved <span class="math notranslate nohighlight">\(\abs{\vec{r}'(0)}\)</span>. Vi regner ut med CAS:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol19.png"><img alt="../../../_images/sol19.png" class="no-click adaptive-figure" src="../../../_images/sol19.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså er banefarten til golfballen idet den blir slått ut ca. <span class="math notranslate nohighlight">\(33.6~\mathrm{m/s}\)</span></p>
+</div>
+</div>
+</div>
 <p>Ved <span class="math notranslate nohighlight">\(t = 0\)</span> befinner en fugl seg i punktet <span class="math notranslate nohighlight">\((20, 10)\)</span>. Fuglen flyr langs en rett linje med konstant banefart og fanger ballen når den er i sitt høyeste punkt over bakken.</p>
+<div class="part docutils container">
+<div class="part-label docutils container">
+c)</div>
+<div class="part-body docutils container">
+<p>Bestem banefarten til fuglen.</p>
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
+<p>Ca. <span class="math notranslate nohighlight">\(20.6~\mathrm{m/s}\)</span>.</p>
+</div>
+<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-eksamensøving-eksempelsett-oppgaver-985 dropdown">
+<p class="admonition-title">Løsning</p>
+<p>Golfballen er i sitt høyest punkt når <span class="math notranslate nohighlight">\(y'(t) = 0\)</span>. Vi løser likningen med CAS som gir:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol110.png"><img alt="../../../_images/sol110.png" class="no-click adaptive-figure" src="../../../_images/sol110.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså er golfballen i sitt høyeste punkt når <span class="math notranslate nohighlight">\(t = \dfrac{29}{10}\)</span>. Koordinatene til punktet er <span class="math notranslate nohighlight">\(\vec{r}\left(\dfrac{29}{10}\right)\)</span>. Fuglen må flytte seg fra <span class="math notranslate nohighlight">\((20, 10)\)</span> til dette punktet på <span class="math notranslate nohighlight">\(\dfrac{29}{10}\)</span> sekunder. Banefarten til fuglen er da gitt ved</p>
+<div class="math notranslate nohighlight">
+\[
+v = \dfrac{s}{t} = \dfrac{\abs{\vec{r}\left(\dfrac{29}{10}\right) - [20, 10]}}{\dfrac{29}{10}}
+\]</div>
+<p>Vi regner ut dette med CAS:</p>
+<figure class="align-default">
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol22.png"><img alt="../../../_images/sol22.png" class="no-click adaptive-figure" src="../../../_images/sol22.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Altså var banefarten til fuglen omtrent <span class="math notranslate nohighlight">\(20.6~\mathrm{m/s}\)</span>.</p>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="admonition exercise exercise-aids">
@@ -66788,8 +67479,8 @@ P(0, 0) \qog Q(8, 4).
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_2a398c4ec7e3_25bc5b_figure_1">
-  <g id="cpl_2a398c4ec7e3_25bc5b_patch_1">
+ <g id="cpl_2a398c4ec7e3_32e520_figure_1">
+  <g id="cpl_2a398c4ec7e3_32e520_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -66798,8 +67489,8 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_2a398c4ec7e3_25bc5b_axes_1">
-   <g id="cpl_2a398c4ec7e3_25bc5b_patch_2">
+  <g id="cpl_2a398c4ec7e3_32e520_axes_1">
+   <g id="cpl_2a398c4ec7e3_32e520_patch_2">
     <path d="M 216 350.111992 
 C 251.566916 350.111992 285.681891 335.981106 310.831499 310.831499 
 C 335.981106 285.681891 350.111992 251.566916 350.111992 216 
@@ -66811,21 +67502,21 @@ C 81.888008 251.566916 96.018894 285.681891 121.168501 310.831499
 C 146.318109 335.981106 180.433084 350.111992 216 350.111992 
 L 216 350.111992 
 z
-" clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linejoin: miter"/>
+" clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linejoin: miter"/>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_line2d_1">
+   <g id="cpl_2a398c4ec7e3_32e520_line2d_1">
     <path d="M 189.177602 28.243211 
 L 403.756789 189.177602 
-" clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_line2d_2">
+   <g id="cpl_2a398c4ec7e3_32e520_line2d_2">
     <path d="M 28.243211 242.822398 
 L 242.822398 403.756789 
-" clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_line2d_3">
+   <g id="cpl_2a398c4ec7e3_32e520_line2d_3">
     <defs>
-     <path id="cpl_2a398c4ec7e3_25bc5b_mbbbeba8a74" d="M 0 5 
+     <path id="cpl_2a398c4ec7e3_32e520_mbbbeba8a74" d="M 0 5 
 C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
 C 4.473168 2.597899 5 1.326016 5 0 
 C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
@@ -66837,26 +67528,26 @@ C -2.597899 4.473168 -1.326016 5 0 5
 z
 " style="stroke: #000000; stroke-opacity: 0.8"/>
     </defs>
-    <g clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)">
-     <use xlink:href="#cpl_2a398c4ec7e3_25bc5b_mbbbeba8a74" x="135.532805" y="108.710406" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+    <g clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)">
+     <use xlink:href="#cpl_2a398c4ec7e3_32e520_mbbbeba8a74" x="135.532805" y="108.710406" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_line2d_4">
-    <g clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)">
-     <use xlink:href="#cpl_2a398c4ec7e3_25bc5b_mbbbeba8a74" x="216" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_2a398c4ec7e3_32e520_line2d_4">
+    <g clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)">
+     <use xlink:href="#cpl_2a398c4ec7e3_32e520_mbbbeba8a74" x="216" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_line2d_5">
-    <g clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)">
-     <use xlink:href="#cpl_2a398c4ec7e3_25bc5b_mbbbeba8a74" x="296.467195" y="108.710406" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_2a398c4ec7e3_32e520_line2d_5">
+    <g clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)">
+     <use xlink:href="#cpl_2a398c4ec7e3_32e520_mbbbeba8a74" x="296.467195" y="108.710406" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_line2d_6">
-    <g clip-path="url(#cpl_2a398c4ec7e3_25bc5b_p01ad5c9321)">
-     <use xlink:href="#cpl_2a398c4ec7e3_25bc5b_mbbbeba8a74" x="135.532805" y="323.289594" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_2a398c4ec7e3_32e520_line2d_6">
+    <g clip-path="url(#cpl_2a398c4ec7e3_32e520_p01ad5c9321)">
+     <use xlink:href="#cpl_2a398c4ec7e3_32e520_mbbbeba8a74" x="135.532805" y="323.289594" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_text_1">
+   <g id="cpl_2a398c4ec7e3_32e520_text_1">
     <!-- $A(0, 8)$ -->
     <g transform="translate(41.497765 95.970075) scale(0.32 -0.32)">
      <defs>
@@ -66991,7 +67682,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(243.49119 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_text_2">
+   <g id="cpl_2a398c4ec7e3_32e520_text_2">
     <!-- $S(3, 4)$ -->
     <g transform="translate(220.828032 244.678518) scale(0.32 -0.32)">
      <defs>
@@ -67093,7 +67784,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(236.157743 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_text_3">
+   <g id="cpl_2a398c4ec7e3_32e520_text_3">
     <!-- $P_1$ -->
     <g transform="translate(301.295227 97.712504) scale(0.32 -0.32)">
      <defs>
@@ -67152,7 +67843,7 @@ z
      <use xlink:href="#CMR17-31" transform="translate(62.877232 -14.943915) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_2a398c4ec7e3_25bc5b_text_4">
+   <g id="cpl_2a398c4ec7e3_32e520_text_4">
     <!-- $P_2$ -->
     <g transform="translate(100.349444 350.225684) scale(0.32 -0.32)">
      <defs>
@@ -67186,7 +67877,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_2a398c4ec7e3_25bc5b_p01ad5c9321">
+  <clipPath id="cpl_2a398c4ec7e3_32e520_p01ad5c9321">
    <rect x="10.8" y="10.8" width="410.4" height="410.4"/>
   </clipPath>
  </defs>
@@ -67240,8 +67931,8 @@ r = \abs{\lvec{SA}} = \abs{[0 - 3, 8 - 4]} = \abs{[-3, 4]} = 5.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_1077b2de94ce_b1e0ee_figure_1">
-  <g id="cpl_1077b2de94ce_b1e0ee_patch_1">
+ <g id="cpl_1077b2de94ce_d6423d_figure_1">
+  <g id="cpl_1077b2de94ce_d6423d_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -67250,8 +67941,8 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_1077b2de94ce_b1e0ee_axes_1">
-   <g id="cpl_1077b2de94ce_b1e0ee_patch_2">
+  <g id="cpl_1077b2de94ce_d6423d_axes_1">
+   <g id="cpl_1077b2de94ce_d6423d_patch_2">
     <path d="M 212.273732 372.431093 
 C 256.364732 372.431093 298.655815 354.913553 329.832861 323.736507 
 C 361.009907 292.559461 378.527447 250.268378 378.527447 206.177377 
@@ -67263,31 +67954,31 @@ C 46.020016 250.268378 63.537556 292.559461 94.714602 323.736507
 C 125.891648 354.913553 168.182731 372.431093 212.273732 372.431093 
 L 212.273732 372.431093 
 z
-" clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linejoin: miter"/>
+" clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linejoin: miter"/>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_1">
+   <g id="cpl_1077b2de94ce_d6423d_line2d_1">
     <path d="M 112.521502 73.174405 
 L 312.025961 73.174405 
-" clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_2">
+   <g id="cpl_1077b2de94ce_d6423d_line2d_2">
     <path d="M 212.273732 73.174405 
 L 212.273732 372.431093 
-" clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_3">
+   <g id="cpl_1077b2de94ce_d6423d_line2d_3">
     <path d="M 112.521502 73.174405 
 L 212.273732 372.431093 
-" clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_4">
+   <g id="cpl_1077b2de94ce_d6423d_line2d_4">
     <path d="M 312.025961 73.174405 
 L 212.273732 372.431093 
-" clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_5">
+   <g id="cpl_1077b2de94ce_d6423d_line2d_5">
     <defs>
-     <path id="cpl_1077b2de94ce_b1e0ee_mc3cc4c787b" d="M 0 5 
+     <path id="cpl_1077b2de94ce_d6423d_mc3cc4c787b" d="M 0 5 
 C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
 C 4.473168 2.597899 5 1.326016 5 0 
 C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
@@ -67299,31 +67990,31 @@ C -2.597899 4.473168 -1.326016 5 0 5
 z
 " style="stroke: #000000; stroke-opacity: 0.8"/>
     </defs>
-    <g clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)">
-     <use xlink:href="#cpl_1077b2de94ce_b1e0ee_mc3cc4c787b" x="112.521502" y="73.174405" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+    <g clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)">
+     <use xlink:href="#cpl_1077b2de94ce_d6423d_mc3cc4c787b" x="112.521502" y="73.174405" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_6">
-    <g clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)">
-     <use xlink:href="#cpl_1077b2de94ce_b1e0ee_mc3cc4c787b" x="212.273732" y="206.177377" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_1077b2de94ce_d6423d_line2d_6">
+    <g clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)">
+     <use xlink:href="#cpl_1077b2de94ce_d6423d_mc3cc4c787b" x="212.273732" y="206.177377" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_7">
-    <g clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)">
-     <use xlink:href="#cpl_1077b2de94ce_b1e0ee_mc3cc4c787b" x="312.025961" y="73.174405" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_1077b2de94ce_d6423d_line2d_7">
+    <g clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)">
+     <use xlink:href="#cpl_1077b2de94ce_d6423d_mc3cc4c787b" x="312.025961" y="73.174405" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_8">
-    <g clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)">
-     <use xlink:href="#cpl_1077b2de94ce_b1e0ee_mc3cc4c787b" x="212.273732" y="73.174405" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_1077b2de94ce_d6423d_line2d_8">
+    <g clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)">
+     <use xlink:href="#cpl_1077b2de94ce_d6423d_mc3cc4c787b" x="212.273732" y="73.174405" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_line2d_9">
-    <g clip-path="url(#cpl_1077b2de94ce_b1e0ee_pc27ef0a272)">
-     <use xlink:href="#cpl_1077b2de94ce_b1e0ee_mc3cc4c787b" x="212.273732" y="372.431093" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_1077b2de94ce_d6423d_line2d_9">
+    <g clip-path="url(#cpl_1077b2de94ce_d6423d_pc27ef0a272)">
+     <use xlink:href="#cpl_1077b2de94ce_d6423d_mc3cc4c787b" x="212.273732" y="372.431093" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_text_1">
+   <g id="cpl_1077b2de94ce_d6423d_text_1">
     <!-- $A(0, 8)$ -->
     <g transform="translate(17.32936 59.284437) scale(0.32 -0.32)">
      <defs>
@@ -67458,7 +68149,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(243.49119 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_text_2">
+   <g id="cpl_1077b2de94ce_d6423d_text_2">
     <!-- $S(3, 4)$ -->
     <g transform="translate(218.258865 236.005533) scale(0.32 -0.32)">
      <defs>
@@ -67560,7 +68251,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(236.157743 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_text_3">
+   <g id="cpl_1077b2de94ce_d6423d_text_3">
     <!-- $P_1(6, 8)$ -->
     <g transform="translate(318.011095 59.284437) scale(0.32 -0.32)">
      <defs>
@@ -67647,7 +68338,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(265.721851 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_text_4">
+   <g id="cpl_1077b2de94ce_d6423d_text_4">
     <!-- $M_1$ -->
     <g transform="translate(165.854487 101.260132) scale(0.32 -0.32)">
      <defs>
@@ -67702,7 +68393,7 @@ z
      <use xlink:href="#CMR17-31" transform="translate(94.373425 -14.943915) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_1077b2de94ce_b1e0ee_text_5">
+   <g id="cpl_1077b2de94ce_d6423d_text_5">
     <!-- $Q_1$ -->
     <g transform="translate(218.258865 400.51682) scale(0.32 -0.32)">
      <defs>
@@ -67746,7 +68437,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_1077b2de94ce_b1e0ee_pc27ef0a272">
+  <clipPath id="cpl_1077b2de94ce_d6423d_pc27ef0a272">
    <rect x="29.394645" y="10.8" width="365.758174" height="390.754755"/>
   </clipPath>
  </defs>
@@ -67781,7 +68472,7 @@ z
 <p>Arealet av trekanten <span class="math notranslate nohighlight">\(AP_1Q_1\)</span> blir</p>
 <div class="math notranslate nohighlight">
 \[
-T_1 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_1} \cdot \abs{\lvec{M_1Q}_1} = \dfrac{1}{2} \cdot 6 \cdot 9 = 27.
+T_1 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_1} \cdot \abs{\lvec{M_1Q_1}} = \dfrac{1}{2} \cdot 6 \cdot 9 = 27.
 \]</div>
 <figure class="adaptive-figure plot-figure no-click align-right">
 <div class="graph-image no-click no-scaled-link"><?xml version="1.0" encoding="utf-8" standalone="no"?>
@@ -67805,8 +68496,8 @@ T_1 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_1} \cdot \abs{\lvec{M_1Q}_1} = \dfrac{1}
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_de7378e31882_de6c83_figure_1">
-  <g id="cpl_de7378e31882_de6c83_patch_1">
+ <g id="cpl_de7378e31882_5de766_figure_1">
+  <g id="cpl_de7378e31882_5de766_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -67815,8 +68506,8 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_de7378e31882_de6c83_axes_1">
-   <g id="cpl_de7378e31882_de6c83_patch_2">
+  <g id="cpl_de7378e31882_5de766_axes_1">
+   <g id="cpl_de7378e31882_5de766_patch_2">
     <path d="M 216.414438 379.24296 
 C 259.706977 379.24296 301.232194 362.042652 331.844642 331.430204 
 C 362.45709 300.817756 379.657398 259.292539 379.657398 216 
@@ -67828,31 +68519,31 @@ C 53.171478 259.292539 70.371786 300.817756 100.984234 331.430204
 C 131.596681 362.042652 173.121898 379.24296 216.414438 379.24296 
 L 216.414438 379.24296 
 z
-" clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linejoin: miter"/>
+" clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linejoin: miter"/>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_1">
+   <g id="cpl_de7378e31882_5de766_line2d_1">
     <path d="M 118.468662 85.405632 
 L 118.468662 346.594368 
-" clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_2">
+   <g id="cpl_de7378e31882_5de766_line2d_2">
     <path d="M 118.468662 216 
 L 379.657398 216 
-" clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_3">
+   <g id="cpl_de7378e31882_5de766_line2d_3">
     <path d="M 118.468662 85.405632 
 L 379.657398 216 
-" clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_4">
+   <g id="cpl_de7378e31882_5de766_line2d_4">
     <path d="M 118.468662 346.594368 
 L 379.657398 216 
-" clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_5">
+   <g id="cpl_de7378e31882_5de766_line2d_5">
     <defs>
-     <path id="cpl_de7378e31882_de6c83_m1990019f4b" d="M 0 5 
+     <path id="cpl_de7378e31882_5de766_m1990019f4b" d="M 0 5 
 C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
 C 4.473168 2.597899 5 1.326016 5 0 
 C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
@@ -67864,31 +68555,31 @@ C -2.597899 4.473168 -1.326016 5 0 5
 z
 " style="stroke: #000000; stroke-opacity: 0.8"/>
     </defs>
-    <g clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)">
-     <use xlink:href="#cpl_de7378e31882_de6c83_m1990019f4b" x="118.468662" y="85.405632" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+    <g clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)">
+     <use xlink:href="#cpl_de7378e31882_5de766_m1990019f4b" x="118.468662" y="85.405632" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_6">
-    <g clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)">
-     <use xlink:href="#cpl_de7378e31882_de6c83_m1990019f4b" x="216.414438" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_de7378e31882_5de766_line2d_6">
+    <g clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)">
+     <use xlink:href="#cpl_de7378e31882_5de766_m1990019f4b" x="216.414438" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_7">
-    <g clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)">
-     <use xlink:href="#cpl_de7378e31882_de6c83_m1990019f4b" x="118.468662" y="346.594368" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_de7378e31882_5de766_line2d_7">
+    <g clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)">
+     <use xlink:href="#cpl_de7378e31882_5de766_m1990019f4b" x="118.468662" y="346.594368" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_8">
-    <g clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)">
-     <use xlink:href="#cpl_de7378e31882_de6c83_m1990019f4b" x="118.468662" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_de7378e31882_5de766_line2d_8">
+    <g clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)">
+     <use xlink:href="#cpl_de7378e31882_5de766_m1990019f4b" x="118.468662" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_line2d_9">
-    <g clip-path="url(#cpl_de7378e31882_de6c83_pfef94ef351)">
-     <use xlink:href="#cpl_de7378e31882_de6c83_m1990019f4b" x="379.657398" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_de7378e31882_5de766_line2d_9">
+    <g clip-path="url(#cpl_de7378e31882_5de766_pfef94ef351)">
+     <use xlink:href="#cpl_de7378e31882_5de766_m1990019f4b" x="379.657398" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_text_1">
+   <g id="cpl_de7378e31882_5de766_text_1">
     <!-- $A(0, 8)$ -->
     <g transform="translate(23.384907 71.623352) scale(0.32 -0.32)">
      <defs>
@@ -68023,7 +68714,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(243.49119 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_text_2">
+   <g id="cpl_de7378e31882_5de766_text_2">
     <!-- $S(3, 4)$ -->
     <g transform="translate(222.291184 245.720467) scale(0.32 -0.32)">
      <defs>
@@ -68125,7 +68816,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(236.157743 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_text_3">
+   <g id="cpl_de7378e31882_5de766_text_3">
     <!-- $P_2(0, 0)$ -->
     <g transform="translate(15.93237 376.314835) scale(0.32 -0.32)">
      <defs>
@@ -68193,7 +68884,7 @@ z
      <use xlink:href="#CMR17-29" transform="translate(265.721851 0) scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_text_4">
+   <g id="cpl_de7378e31882_5de766_text_4">
     <!-- $M_2$ -->
     <g transform="translate(72.157804 243.978039) scale(0.32 -0.32)">
      <defs>
@@ -68248,7 +68939,7 @@ z
      <use xlink:href="#CMR17-32" transform="translate(94.373425 -14.943915) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_de7378e31882_de6c83_text_5">
+   <g id="cpl_de7378e31882_5de766_text_5">
     <!-- $Q_2$ -->
     <g transform="translate(385.534144 243.978039) scale(0.32 -0.32)">
      <defs>
@@ -68292,7 +68983,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_de7378e31882_de6c83_pfef94ef351">
+  <clipPath id="cpl_de7378e31882_5de766_pfef94ef351">
    <rect x="36.847182" y="10.8" width="359.134512" height="410.4"/>
   </clipPath>
  </defs>
@@ -68327,7 +69018,7 @@ z
 <p>Arealet av trekanten <span class="math notranslate nohighlight">\(AP_2Q_2\)</span> blir</p>
 <div class="math notranslate nohighlight">
 \[
-T_2 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_2} \cdot \abs{\lvec{M_2Q}_2} = \dfrac{1}{2} \cdot 8 \cdot 8 = 32.
+T_2 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_2} \cdot \abs{\lvec{M_2Q_2}} = \dfrac{1}{2} \cdot 8 \cdot 8 = 32.
 \]</div>
 <p>Dette blir den trekanten som har det største arealet, så koordinatene til <span class="math notranslate nohighlight">\(P\)</span> og <span class="math notranslate nohighlight">\(Q\)</span> må være</p>
 <div class="math notranslate nohighlight">

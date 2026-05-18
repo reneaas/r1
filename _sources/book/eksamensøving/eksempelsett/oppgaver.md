@@ -1173,7 +1173,7 @@ $$
 Arealet av trekanten $AP_1Q_1$ blir 
 
 $$
-T_1 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_1} \cdot \abs{\lvec{M_1Q}_1} = \dfrac{1}{2} \cdot 6 \cdot 9 = 27.
+T_1 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_1} \cdot \abs{\lvec{M_1Q_1}} = \dfrac{1}{2} \cdot 6 \cdot 9 = 27.
 $$
 
 
@@ -1247,7 +1247,7 @@ $$
 Arealet av trekanten $AP_2Q_2$ blir
 
 $$
-T_2 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_2} \cdot \abs{\lvec{M_2Q}_2} = \dfrac{1}{2} \cdot 8 \cdot 8 = 32.
+T_2 = \dfrac{1}{2} \cdot \abs{\lvec{AP}_2} \cdot \abs{\lvec{M_2Q_2}} = \dfrac{1}{2} \cdot 8 \cdot 8 = 32.
 $$
 
 Dette blir den trekanten som har det største arealet, så koordinatene til $P$ og $Q$ må være 
