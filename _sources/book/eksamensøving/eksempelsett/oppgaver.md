@@ -59,7 +59,7 @@ $$
 
 ::::{answer}
 $$
-h'(x) = \dfrac{2 \ln (2x) - 1}{x^3}
+h'(x) = \dfrac{1 - 2 \ln (2x)}{x^3}
 $$
 ::::
 
@@ -68,13 +68,13 @@ Vi bruker kvotientregelen for derivasjon:
 
 $$
 \begin{align*}
-h'(x) &= \dfrac{(x^2)' \cdot \ln (2x) - x^2 \cdot \left[\ln (2x)\right]'}{(x^2)^2} \\
+h'(x) &= \dfrac{\left(ln(2x)\right)'x^2 - \ln(2x) \cdot (x^2)'}{(x^2)^2} \\
 \\
-&= \dfrac{2x \cdot \ln (2x) - x^2 \cdot \dfrac{1}{2x} \cdot 2}{x^4} \\
+&= \dfrac{\dfrac{1}{2x} \cdot 2 \cdot x^2 - \ln(2x) \cdot 2x}{x^4} \\
 \\
-&= \dfrac{2x \cdot \ln (2x) - x}{x^4} \\
+&= \dfrac{x - 2x \ln(2x)}{x^4} \\
 \\
-&= \dfrac{2 \ln (2x) - 1}{x^3}
+&= \dfrac{1 - 2 \ln(2x)}{x^3}
 \end{align*}
 $$
 ::::
@@ -351,7 +351,7 @@ Firkanten $OABC$ er et rektangel, der $O$ er origo, $A$ ligger på $x$-aksen, $B
 
 
 :::::::::::::{part} a
-Bestem en eksakt verdi for arealet når $x = 1$.
+Bestem en eksakt verdi for arealet av det fargelagte området når $x = 1$.
 
 
 ::::{answer}
