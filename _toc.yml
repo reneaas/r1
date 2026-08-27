@@ -195,8 +195,8 @@ parts:
     numbered: false
     chapters:
     - file: book/eksamensressurser/python.md
-    - file: book/eksamensressurser/cas.md
-    - file: book/eksamensressurser/geogebra.md
+    - url: https://www.geogebra.org/classic
+      title: Geogebra
 
 
     
