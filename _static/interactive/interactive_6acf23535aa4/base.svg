@@ -35,30 +35,30 @@
    </g>
    <g id="line2d_1">
     <defs>
-     <path id="ma6c7865f95" d="M 3 0  L -3 -3  L -3 3  z " style="stroke: #000000; stroke-linejoin: miter"/>
+     <path id="m756665864c" d="M 3 0  L -3 -3  L -3 3  z " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g id="mb_auto_g_2">
-     <use xlink:href="#ma6c7865f95" x="416.1375" y="214.956677" style="stroke: #000000; stroke-linejoin: miter" id="mb_auto_use_2"/>
+     <use xlink:href="#m756665864c" x="416.1375" y="214.956677" style="stroke: #000000; stroke-linejoin: miter" id="mb_auto_use_2"/>
     </g>
    </g>
    <g id="line2d_2">
     <defs>
-     <path id="m414112573f" d="M 0 -3  L -3 3  L 3 3  z " style="stroke: #000000; stroke-linejoin: miter"/>
+     <path id="m402739f45a" d="M 0 -3  L -3 3  L 3 3  z " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g id="mb_auto_g_3">
-     <use xlink:href="#m414112573f" x="211.66875" y="20.984473" style="stroke: #000000; stroke-linejoin: miter" id="mb_auto_use_3"/>
+     <use xlink:href="#m402739f45a" x="211.66875" y="20.984473" style="stroke: #000000; stroke-linejoin: miter" id="mb_auto_use_3"/>
     </g>
    </g>
    <g id="line2d_3">
     <defs>
-     <path id="m2093253ff7" d="M 0 5  C 1.326016 5 2.597899 4.473168 3.535534 3.535534  C 4.473168 2.597899 5 1.326016 5 0  C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534  C 2.597899 -4.473168 1.326016 -5 0 -5  C -1.326016 -5 -2.597899 -4.473168 -3.535534 -3.535534  C -4.473168 -2.597899 -5 -1.326016 -5 0  C -5 1.326016 -4.473168 2.597899 -3.535534 3.535534  C -2.597899 4.473168 -1.326016 5 0 5  z " style="stroke: #000000; stroke-opacity: 0.8"/>
+     <path id="m04b6ec03bb" d="M 0 5  C 1.326016 5 2.597899 4.473168 3.535534 3.535534  C 4.473168 2.597899 5 1.326016 5 0  C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534  C 2.597899 -4.473168 1.326016 -5 0 -5  C -1.326016 -5 -2.597899 -4.473168 -3.535534 -3.535534  C -4.473168 -2.597899 -5 -1.326016 -5 0  C -5 1.326016 -4.473168 2.597899 -3.535534 3.535534  C -2.597899 4.473168 -1.326016 5 0 5  z " style="stroke: #000000; stroke-opacity: 0.8"/>
     </defs>
-    <g clip-path="url(#p0ff3cece51)" id="mb_auto_g_4">
-     <use xlink:href="#m2093253ff7" x="211.66875" y="214.956677" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8" id="mb_auto_use_4"/>
+    <g clip-path="url(#pbf9d8863dc)" id="mb_auto_g_4">
+     <use xlink:href="#m04b6ec03bb" x="211.66875" y="214.956677" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8" id="mb_auto_use_4"/>
     </g>
    </g>
    <g id="line2d_4">
-    <path d="M 211.66875 214.956677  L 211.66875 214.956677  " clip-path="url(#p0ff3cece51)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square" id="mb_auto_path_2"/>
+    <path d="M 211.66875 214.956677  L 211.66875 214.956677  " clip-path="url(#pbf9d8863dc)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square" id="mb_auto_path_2"/>
    </g>
    <g id="patch_3">
     <path d="M 211.66875 408.928882  L 211.66875 20.984473  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" id="mb_auto_path_3"/>
@@ -75,7 +75,7 @@
   </g>
  </g>
  <defs>
-  <clipPath id="p0ff3cece51">
+  <clipPath id="pbf9d8863dc">
    <rect x="7.2" y="20.984473" width="408.9375" height="387.944409" id="mb_auto_rect_0"/>
   </clipPath>
  </defs>

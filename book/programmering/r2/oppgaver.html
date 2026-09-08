@@ -16,22 +16,20 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" />
@@ -56,7 +54,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=b4607c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=b3cda4db" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
@@ -82,35 +80,34 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
     <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
     <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
     <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
   
-  <!-- So that users can add custom icons -->
-  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -123,7 +120,7 @@
     <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
     <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
@@ -153,7 +150,6 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/programmering/r2/oppgaver';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script>mermaid.initialize({"startOnLoad": true})</script>
     <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
     <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
@@ -167,26 +163,26 @@
     <script src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
     <script src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
-    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
-    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
+    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
+    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
     <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
-    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
     <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
     <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
+    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
     <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=079d69da"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
-    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
     <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
+    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
     <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
+    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -204,13 +200,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
-  <meta name="docsearch:version" content="" />
-  
-    
-    <script src="../../../_static/searchtools.js"></script>
-    <script src="../../../_static/language_data.js"></script>
-    <script src="../../../searchindex.js"></script>
-  
 <!-- Pyodide -->
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.0/full/pyodide.js"></script>
 
@@ -248,22 +237,33 @@
 
 
   </head>
-  <body data-default-mode="">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  
-  <dialog id="pst-search-dialog">
-    
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -271,6 +271,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -278,59 +279,15 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-<div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
-    <span class="fa-solid fa-bars"></span>
-  </button>
-  
-  
-  <div class="col-lg-9 navbar-header-items">
-    
-    
-    <div class="navbar-header-items__end">
-      
-        <div class="navbar-item navbar-persistent--container">
-          
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button>
-        </div>
-      
-      
-    </div>
-    
-  </div>
-  
-  
-    <div class="navbar-persistent--mobile">
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button>
-    </div>
-  
-
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
-</div>
-
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -339,8 +296,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -370,17 +326,21 @@
     
     
     <img src="../../../_static/r1_logo.png" class="logo__image only-light" alt="Matematikk R1 - Home"/>
-    <img src="../../../_static/r1_logo.png" class="logo__image only-dark pst-js-only" alt="Matematikk R1 - Home"/>
+    <script>document.write(`<img src="../../../_static/r1_logo.png" class="logo__image only-dark" alt="Matematikk R1 - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">I. Potenser og logaritmer</span></p>
@@ -497,14 +457,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -587,7 +542,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  class="btn btn-sm btn-fullscreen-button"
   title="Fullskjerm-modus"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -601,17 +556,25 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -633,7 +596,7 @@
                 <h2> Innhold </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="pst-show_toc_level nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
@@ -673,7 +636,7 @@
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-0b51edeb86264a13ae153787ff78ea3d" class="quiz-main-container"></div>
+        <div id="quiz-container-0c0c946c40ee40d7ae948e21c1ce5093" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -685,7 +648,7 @@
                 const questionsData = [{"content": "Hvilke tall skrives ut av programmet nedenfor?  <pre><code class=\"python\">for n in range(-2, 3):\n    print(n)</code></pre>", "answers": [{"content": "$-2, -1, 0, 1, 2$", "isCorrect": true}, {"content": "$-2, 3$", "isCorrect": false}, {"content": "$-2, -1, 0, 1, 2, 3$", "isCorrect": false}, {"content": "$-2, 1, 3$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(4):\n    print(n)</code></pre>", "answers": [{"content": "$0, 1, 2, 3$", "isCorrect": true}, {"content": "$0, 1, 2, 3, 4$", "isCorrect": false}, {"content": "$4$", "isCorrect": false}, {"content": "$1, 2, 3, 4$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(-2, 2, 1):\n    print(n)</code></pre>", "answers": [{"content": "$-2, -1, 0, 1$", "isCorrect": true}, {"content": "$-2, 2, 1$", "isCorrect": false}, {"content": "$-2, -1, 0, 1, 2$", "isCorrect": false}, {"content": "$-1, 0, 1, 2$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(1, 6, 2):\n    print(n)</code></pre>", "answers": [{"content": "$1, 3, 5$", "isCorrect": true}, {"content": "$1, 6, 2$", "isCorrect": false}, {"content": "$1, 2, 6$", "isCorrect": false}, {"content": "$1, 3, 5, 6$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(1, 10, 3):\n    print(n)</code></pre>", "answers": [{"content": "$1, 4, 7$", "isCorrect": true}, {"content": "$1, 4, 7, 10$", "isCorrect": false}, {"content": "$1, 3, 10$", "isCorrect": false}, {"content": "$1, 10, 3$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(0, 101, 10):\n    print(n)</code></pre>", "answers": [{"content": "$0, 10, 20, \\ldots, 90, 100$", "isCorrect": true}, {"content": "$0, 10, 20, \\ldots, 90$", "isCorrect": false}, {"content": "$0, 101, 10$", "isCorrect": false}, {"content": "$0, 10, 100$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-0b51edeb86264a13ae153787ff78ea3d', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-0c0c946c40ee40d7ae948e21c1ce5093', questionsData);
             });
         </script>
         </div>
@@ -701,7 +664,7 @@
 <label class="sd-tab-label" for="sd-tab-item-0">
 a</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-449926ff"></div>
+        <div id="container-code-dfe56801"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -709,7 +672,7 @@ a</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-449926ff",
+                    "container-code-dfe56801",
                     code,
                 );
             });
@@ -719,7 +682,7 @@ a</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-1">
 b</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-8cac1634"></div>
+        <div id="container-code-5b3578fe"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -728,7 +691,7 @@ b</label><div class="sd-tab-content docutils">
     `;
 
                 makePredictionInteractiveCode(
-                    "container-code-8cac1634",
+                    "container-code-5b3578fe",
                     code,
                 );
             });
@@ -738,7 +701,7 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-2">
 c</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-21ebc759"></div>
+        <div id="container-code-9d7ecac6"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -746,7 +709,7 @@ c</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-21ebc759",
+                    "container-code-9d7ecac6",
                     code,
                 );
             });
@@ -756,7 +719,7 @@ c</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-3">
 d</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-e88f2d30"></div>
+        <div id="container-code-1385bdda"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -765,7 +728,7 @@ d</label><div class="sd-tab-content docutils">
     `;
 
                 makePredictionInteractiveCode(
-                    "container-code-e88f2d30",
+                    "container-code-1385bdda",
                     code,
                 );
             });
@@ -788,7 +751,7 @@ a</label><div class="sd-tab-content docutils">
 1, 2, 3, 4, 5, 6, 7, 8.
 \]</div>
 
-        <div id="container-code-dedab384"></div>
+        <div id="container-code-cdb2fbb0"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -798,7 +761,7 @@ a</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-dedab384",
+                    "container-code-cdb2fbb0",
                     code,
                 );
             });
@@ -821,7 +784,7 @@ b</label><div class="sd-tab-content docutils">
 2, 4, 6, 8.
 \]</div>
 
-        <div id="container-code-bc06dbd2"></div>
+        <div id="container-code-76d88171"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -831,7 +794,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-bc06dbd2",
+                    "container-code-76d88171",
                     code,
                 );
             });
@@ -854,7 +817,7 @@ c</label><div class="sd-tab-content docutils">
 1, 5, 9, 13. 
 \]</div>
 
-        <div id="container-code-08e800ad"></div>
+        <div id="container-code-cd886aef"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -864,7 +827,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-08e800ad",
+                    "container-code-cd886aef",
                     code,
                 );
             });
@@ -887,7 +850,7 @@ d</label><div class="sd-tab-content docutils">
 -5, -3, -1, 1, 3, 5. 
 \]</div>
 
-        <div id="container-code-cf1d6144"></div>
+        <div id="container-code-a39a7a76"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -897,7 +860,7 @@ d</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-cf1d6144",
+                    "container-code-a39a7a76",
                     code,
                 );
             });
@@ -928,7 +891,7 @@ a</label><div class="sd-tab-content docutils">
 10, 6, 2
 \]</div>
 
-        <div id="container-code-80f802d9"></div>
+        <div id="container-code-4fe732bd"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -938,7 +901,7 @@ a</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-80f802d9",
+                    "container-code-4fe732bd",
                     code,
                 );
             });
@@ -961,7 +924,7 @@ b</label><div class="sd-tab-content docutils">
 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0
 \]</div>
 
-        <div id="container-code-df91f717"></div>
+        <div id="container-code-2d07289c"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -971,7 +934,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-df91f717",
+                    "container-code-2d07289c",
                     code,
                 );
             });
@@ -994,7 +957,7 @@ c</label><div class="sd-tab-content docutils">
 5, 3, 1, -1, -3, -5
 \]</div>
 
-        <div id="container-code-d7d27aa6"></div>
+        <div id="container-code-86162924"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1004,7 +967,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-d7d27aa6",
+                    "container-code-86162924",
                     code,
                 );
             });
@@ -1027,7 +990,7 @@ d</label><div class="sd-tab-content docutils">
 -2, -5, -8, -11, -14
 \]</div>
 
-        <div id="container-code-5586b5d4"></div>
+        <div id="container-code-4db8d917"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1037,7 +1000,7 @@ d</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-5586b5d4",
+                    "container-code-4db8d917",
                     code,
                 );
             });
@@ -1064,7 +1027,7 @@ d</label><div class="sd-tab-content docutils">
 a</label><div class="sd-tab-content docutils">
 <p>Fyll ut programmet nedenfor slik at det skriver ut alle partallene til og med <span class="math notranslate nohighlight">\(20\)</span>.</p>
 
-        <div id="container-code-76e9643c"></div>
+        <div id="container-code-084b6be4"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1074,7 +1037,7 @@ a</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-76e9643c",
+                    "container-code-084b6be4",
                     code,
                 );
             });
@@ -1093,7 +1056,7 @@ a</label><div class="sd-tab-content docutils">
 b</label><div class="sd-tab-content docutils">
 <p>Fyll ut programmet nedenfor slik at det skriver ut alle oddetallene til og med <span class="math notranslate nohighlight">\(21\)</span>.</p>
 
-        <div id="container-code-a06ffc3d"></div>
+        <div id="container-code-ab086e78"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1103,7 +1066,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-a06ffc3d",
+                    "container-code-ab086e78",
                     code,
                 );
             });
@@ -1122,7 +1085,7 @@ b</label><div class="sd-tab-content docutils">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut de <span class="math notranslate nohighlight">\(20\)</span> <strong>første</strong> partallene.</p>
 
-        <div id="container-code-4bafa932"></div>
+        <div id="container-code-94fe4f82"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1133,7 +1096,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-4bafa932",
+                    "container-code-94fe4f82",
                     code,
                 );
             });
@@ -1153,7 +1116,7 @@ c</label><div class="sd-tab-content docutils">
 d</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut de <span class="math notranslate nohighlight">\(20\)</span> <strong>første</strong> oddetallene.</p>
 
-        <div id="container-code-caafd11d"></div>
+        <div id="container-code-e27f9999"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1164,7 +1127,7 @@ d</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-caafd11d",
+                    "container-code-e27f9999",
                     code,
                 );
             });
@@ -1197,7 +1160,7 @@ d</label><div class="sd-tab-content docutils">
 a</label><div class="sd-tab-content docutils">
 <p>Fyll ut programmet nedenfor slik at det skriver ut alle partallene til og med <span class="math notranslate nohighlight">\(20\)</span> ved hjelp av en <code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-setning.</p>
 
-        <div id="container-code-21346761"></div>
+        <div id="container-code-3a8afeb7"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1207,7 +1170,7 @@ a</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-21346761",
+                    "container-code-3a8afeb7",
                     code,
                 );
             });
@@ -1222,7 +1185,7 @@ b</label><div class="sd-tab-content docutils">
 </div></div><br>
 <p>Bruk strategien til Anna og Bjørn i programmet nedenfor.</p>
 
-        <div id="container-code-0b1ac80b"></div>
+        <div id="container-code-a66d7a0e"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1234,7 +1197,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-0b1ac80b",
+                    "container-code-a66d7a0e",
                     code,
                 );
             });
@@ -1277,7 +1240,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-a021bedf"></div>
+        <div id="container-code-f297f02c"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1287,7 +1250,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-a021bedf",
+                    "container-code-f297f02c",
                     code,
                 );
             });
@@ -1374,7 +1337,7 @@ S = 2 + 4 + 6 + \ldots + 98 + 100
 </div>
 </div>
 
-        <div id="container-code-47d7dcde"></div>
+        <div id="container-code-6a919c7c"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1386,7 +1349,7 @@ print(s)
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-47d7dcde",
+                    "container-code-6a919c7c",
                     code,
                 );
             });
@@ -1455,7 +1418,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-924581f4"></div>
+        <div id="container-code-4985dde2"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1466,7 +1429,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-924581f4",
+                    "container-code-4985dde2",
                     code,
                 );
             });
@@ -1504,7 +1467,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-25c960b1"></div>
+        <div id="container-code-4d0b16c2"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1515,7 +1478,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-25c960b1",
+                    "container-code-4d0b16c2",
                     code,
                 );
             });
@@ -1559,7 +1522,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-5d8f00ec"></div>
+        <div id="container-code-4de447b4"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1570,7 +1533,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-5d8f00ec",
+                    "container-code-4de447b4",
                     code,
                 );
             });
@@ -1618,7 +1581,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-865f0ebd"></div>
+        <div id="container-code-c157c84b"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1629,7 +1592,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-865f0ebd",
+                    "container-code-c157c84b",
                     code,
                 );
             });
@@ -1711,7 +1674,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-1f732454"></div>
+        <div id="container-code-e3b47431"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1721,7 +1684,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-1f732454",
+                    "container-code-e3b47431",
                     code,
                 );
             });
@@ -1787,7 +1750,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-182b69ad"></div>
+        <div id="container-code-665a9f32"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1797,7 +1760,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-182b69ad",
+                    "container-code-665a9f32",
                     code,
                 );
             });
@@ -1852,7 +1815,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-b96b9381"></div>
+        <div id="container-code-8850fc85"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1863,7 +1826,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-b96b9381",
+                    "container-code-8850fc85",
                     code,
                 );
             });
@@ -1922,7 +1885,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-23b840f1"></div>
+        <div id="container-code-30a442c0"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1933,7 +1896,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-23b840f1",
+                    "container-code-30a442c0",
                     code,
                 );
             });
@@ -1968,7 +1931,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-86b4b7a5"></div>
+        <div id="container-code-a4242bd0"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1978,7 +1941,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-86b4b7a5",
+                    "container-code-a4242bd0",
                     code,
                 );
             });
@@ -2056,7 +2019,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-78aee2da"></div>
+        <div id="container-code-9510cb54"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -2066,7 +2029,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-78aee2da",
+                    "container-code-9510cb54",
                     code,
                 );
             });
@@ -2143,7 +2106,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-4b405fbd"></div>
+        <div id="container-code-e2669039"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -2154,7 +2117,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-4b405fbd",
+                    "container-code-e2669039",
                     code,
                 );
             });
@@ -2190,7 +2153,7 @@ b</label><div class="sd-tab-content docutils">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program med utgangspunkt i algoritmen din fra <strong>b</strong> og regn ut en tilnærming til <span class="math notranslate nohighlight">\(\pi\)</span>.</p>
 
-        <div id="container-code-3411ed22"></div>
+        <div id="container-code-cbc187a0"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -2200,7 +2163,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-3411ed22",
+                    "container-code-cbc187a0",
                     code,
                 );
             });
@@ -2281,17 +2244,15 @@ c</label><div class="sd-tab-content docutils">
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Innhold
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
@@ -2360,8 +2321,8 @@ Av René Ask, Edvard Munch Videregående Skole
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

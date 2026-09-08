@@ -16,22 +16,20 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" />
@@ -56,7 +54,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=b4607c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=b3cda4db" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
@@ -82,35 +80,34 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
     <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
     <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
     <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
   
-  <!-- So that users can add custom icons -->
-  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -123,7 +120,7 @@
     <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
     <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
@@ -153,7 +150,6 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/numeriske_metoder/numerisk_derivasjon/oppgaver';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script>mermaid.initialize({"startOnLoad": true})</script>
     <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
     <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
@@ -167,26 +163,26 @@
     <script src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
     <script src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
-    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
-    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
+    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
+    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
     <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
-    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
     <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
     <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
+    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
     <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=079d69da"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
-    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
     <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
+    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
     <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
+    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -202,13 +198,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
-  <meta name="docsearch:version" content="" />
-  
-    
-    <script src="../../../_static/searchtools.js"></script>
-    <script src="../../../_static/language_data.js"></script>
-    <script src="../../../searchindex.js"></script>
-  
 <!-- Pyodide -->
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.0/full/pyodide.js"></script>
 
@@ -246,22 +235,33 @@
 
 
   </head>
-  <body data-default-mode="">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  
-  <dialog id="pst-search-dialog">
-    
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -269,6 +269,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -276,59 +277,15 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-<div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
-    <span class="fa-solid fa-bars"></span>
-  </button>
-  
-  
-  <div class="col-lg-9 navbar-header-items">
-    
-    
-    <div class="navbar-header-items__end">
-      
-        <div class="navbar-item navbar-persistent--container">
-          
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button>
-        </div>
-      
-      
-    </div>
-    
-  </div>
-  
-  
-    <div class="navbar-persistent--mobile">
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button>
-    </div>
-  
-
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
-</div>
-
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -339,8 +296,7 @@
       
         
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -370,17 +326,21 @@
     
     
     <img src="../../../_static/r1_logo.png" class="logo__image only-light" alt="Matematikk R1 - Home"/>
-    <img src="../../../_static/r1_logo.png" class="logo__image only-dark pst-js-only" alt="Matematikk R1 - Home"/>
+    <script>document.write(`<img src="../../../_static/r1_logo.png" class="logo__image only-dark" alt="Matematikk R1 - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">I. Potenser og logaritmer</span></p>
@@ -497,14 +457,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -587,7 +542,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  class="btn btn-sm btn-fullscreen-button"
   title="Fullskjerm-modus"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -601,17 +556,25 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -633,7 +596,7 @@
                 <h2> Innhold </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="pst-show_toc_level nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-Elementaerfunksjoner-i-Python">Elementærfunksjoner i Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
@@ -708,7 +671,7 @@ a</label><div class="sd-tab-content docutils">
 <p>Et program vises nedenfor.</p>
 <p>Bestem verdien programmet skriver ut når det kjøres. Sjekk svaret ditt ved å kjøre programmet.</p>
 
-        <div id="container-code-66d59c7a"></div>
+        <div id="container-code-24e5cfdd"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -723,7 +686,7 @@ dfdx = (f(x + h) - f(x)) / h
 print(dfdx)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-66d59c7a",
+                    "container-code-24e5cfdd",
                     code,
                 );
             });
@@ -735,7 +698,7 @@ b</label><div class="sd-tab-content docutils">
 <p>Et program vises nedenfor.</p>
 <p>Bestem verdien programmet skriver ut når det kjøres. Sjekk svaret ditt ved å kjøre programmet.</p>
 
-        <div id="container-code-1032bacb"></div>
+        <div id="container-code-5979ca1d"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -751,7 +714,7 @@ dgdx = (g(x + h) - g(x)) / h
 print(dgdx)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-1032bacb",
+                    "container-code-5979ca1d",
                     code,
                 );
             });
@@ -776,7 +739,7 @@ f(x) = \sqrt{x + 1}
 <p>i punktet <span class="math notranslate nohighlight">\(x = 3\)</span>.</p>
 <p>Fullfør programmet slik at det fungerer som beskrevet.</p>
 
-        <div id="container-code-8ea7cac7"></div>
+        <div id="container-code-ebfdd503"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -791,7 +754,7 @@ f_derivert = ????
 print(f_derivert)`;
 
                 makeInteractiveCode(
-                    "container-code-8ea7cac7",
+                    "container-code-ebfdd503",
                     code,
                 );
             });
@@ -808,7 +771,7 @@ g(x) = x\ln x
 <p>i punktet <span class="math notranslate nohighlight">\(x = 5\)</span>.</p>
 <p>Fullfør programmet og bestem <span class="math notranslate nohighlight">\(g'(5)\)</span>.</p>
 
-        <div id="container-code-786a1643"></div>
+        <div id="container-code-4734a6f1"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -825,7 +788,7 @@ g_derivert = ????
 print(g_derivert)`;
 
                 makeInteractiveCode(
-                    "container-code-786a1643",
+                    "container-code-4734a6f1",
                     code,
                 );
             });
@@ -842,7 +805,7 @@ p(x) = x e^{-x^2}
 <p>i punktet <span class="math notranslate nohighlight">\(x = 1\)</span>.</p>
 <p>Fullfør programmet og bestem <span class="math notranslate nohighlight">\(p'(1)\)</span>.</p>
 
-        <div id="container-code-9bdaf405"></div>
+        <div id="container-code-ec89a0c6"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -858,7 +821,7 @@ p_derivert = ????
 print(p_derivert)`;
 
                 makeInteractiveCode(
-                    "container-code-9bdaf405",
+                    "container-code-ec89a0c6",
                     code,
                 );
             });
@@ -880,7 +843,7 @@ print(p_derivert)`;
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T15:07:09.805807</dc:date>
+    <dc:date>2026-09-08T18:12:59.722230</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -893,8 +856,8 @@ print(p_derivert)`;
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_4c29e392103e_f5099c_figure_1">
-  <g id="cpl_4c29e392103e_f5099c_patch_1">
+ <g id="cpl_4c29e392103e_abb4f7_figure_1">
+  <g id="cpl_4c29e392103e_abb4f7_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -903,8 +866,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_4c29e392103e_f5099c_axes_1">
-   <g id="cpl_4c29e392103e_f5099c_patch_2">
+  <g id="cpl_4c29e392103e_abb4f7_axes_1">
+   <g id="cpl_4c29e392103e_abb4f7_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -913,23 +876,23 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_matplotlib.axis_1">
-    <g id="cpl_4c29e392103e_f5099c_xtick_1">
-     <g id="cpl_4c29e392103e_f5099c_line2d_1">
+   <g id="cpl_4c29e392103e_abb4f7_matplotlib.axis_1">
+    <g id="cpl_4c29e392103e_abb4f7_xtick_1">
+     <g id="cpl_4c29e392103e_abb4f7_line2d_1">
       <defs>
-       <path id="cpl_4c29e392103e_f5099c_m29a32cdf34" d="M 0 0 
+       <path id="cpl_4c29e392103e_abb4f7_m584fbf8995" d="M 0 0 
 L 0 3.5 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_m29a32cdf34" x="83.5" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_m584fbf8995" x="83.5" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
-     <g id="cpl_4c29e392103e_f5099c_text_1">
+     <g id="cpl_4c29e392103e_abb4f7_text_1">
       <!-- $\mathdefault{−2}$ -->
       <g transform="translate(65.023313 284.966613) scale(0.3 -0.3)">
        <defs>
-        <path id="cpl_4c29e392103e_f5099c_CMSY10-0" d="M 4218 1472 
+        <path id="cpl_4c29e392103e_abb4f7_CMSY10-0" d="M 4218 1472 
 C 4326 1472 4442 1472 4442 1600 
 C 4442 1728 4326 1728 4218 1728 
 L 755 1728 
@@ -938,7 +901,7 @@ C 531 1472 646 1472 755 1472
 L 4218 1472 
 z
 " transform="scale(0.015625)"/>
-        <path id="cpl_4c29e392103e_f5099c_CMR17-32" d="M 2669 989 
+        <path id="cpl_4c29e392103e_abb4f7_CMR17-32" d="M 2669 989 
 L 2554 989 
 C 2490 536 2438 459 2413 420 
 C 2381 369 1920 369 1830 369 
@@ -961,22 +924,22 @@ L 2669 989
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_CMSY10-0" transform="scale(0.996264)"/>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_CMR17-32" transform="translate(77.487468 0) scale(0.996264)"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_CMSY10-0" transform="scale(0.996264)"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_CMR17-32" transform="translate(77.487468 0) scale(0.996264)"/>
       </g>
      </g>
     </g>
-    <g id="cpl_4c29e392103e_f5099c_xtick_2">
-     <g id="cpl_4c29e392103e_f5099c_line2d_2">
+    <g id="cpl_4c29e392103e_abb4f7_xtick_2">
+     <g id="cpl_4c29e392103e_abb4f7_line2d_2">
       <g>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_m29a32cdf34" x="156.2" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_m584fbf8995" x="156.2" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
-     <g id="cpl_4c29e392103e_f5099c_text_2">
+     <g id="cpl_4c29e392103e_abb4f7_text_2">
       <!-- $\mathdefault{−1}$ -->
       <g transform="translate(137.723313 284.966613) scale(0.3 -0.3)">
        <defs>
-        <path id="cpl_4c29e392103e_f5099c_CMR17-31" d="M 1702 4058 
+        <path id="cpl_4c29e392103e_abb4f7_CMR17-31" d="M 1702 4058 
 C 1702 4192 1696 4192 1606 4192 
 C 1357 3916 979 3827 621 3827 
 C 602 3827 570 3827 563 3808 
@@ -995,42 +958,42 @@ L 1702 4058
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_CMSY10-0" transform="scale(0.996264)"/>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_CMR17-31" transform="translate(77.487468 0) scale(0.996264)"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_CMSY10-0" transform="scale(0.996264)"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_CMR17-31" transform="translate(77.487468 0) scale(0.996264)"/>
       </g>
      </g>
     </g>
-    <g id="cpl_4c29e392103e_f5099c_xtick_3">
-     <g id="cpl_4c29e392103e_f5099c_line2d_3">
+    <g id="cpl_4c29e392103e_abb4f7_xtick_3">
+     <g id="cpl_4c29e392103e_abb4f7_line2d_3">
       <g>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_m29a32cdf34" x="301.6" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_m584fbf8995" x="301.6" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
-     <g id="cpl_4c29e392103e_f5099c_text_3">
+     <g id="cpl_4c29e392103e_abb4f7_text_3">
       <!-- $\mathdefault{1}$ -->
       <g transform="translate(294.746428 284.966613) scale(0.3 -0.3)">
-       <use xlink:href="#cpl_4c29e392103e_f5099c_CMR17-31" transform="scale(0.996264)"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_CMR17-31" transform="scale(0.996264)"/>
       </g>
      </g>
     </g>
-    <g id="cpl_4c29e392103e_f5099c_xtick_4">
-     <g id="cpl_4c29e392103e_f5099c_line2d_4">
+    <g id="cpl_4c29e392103e_abb4f7_xtick_4">
+     <g id="cpl_4c29e392103e_abb4f7_line2d_4">
       <g>
-       <use xlink:href="#cpl_4c29e392103e_f5099c_m29a32cdf34" x="374.3" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_m584fbf8995" x="374.3" y="257.211118" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
-     <g id="cpl_4c29e392103e_f5099c_text_4">
+     <g id="cpl_4c29e392103e_abb4f7_text_4">
       <!-- $\mathdefault{2}$ -->
       <g transform="translate(367.446428 284.966613) scale(0.3 -0.3)">
-       <use xlink:href="#cpl_4c29e392103e_f5099c_CMR17-32" transform="scale(0.996264)"/>
+       <use xlink:href="#cpl_4c29e392103e_abb4f7_CMR17-32" transform="scale(0.996264)"/>
       </g>
      </g>
     </g>
-    <g id="cpl_4c29e392103e_f5099c_text_5">
+    <g id="cpl_4c29e392103e_abb4f7_text_5">
      <!-- $x$ -->
      <g transform="translate(430.369782 315.535559) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_4c29e392103e_f5099c_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_4c29e392103e_abb4f7_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -1064,16 +1027,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_4c29e392103e_f5099c_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_4c29e392103e_abb4f7_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_matplotlib.axis_2">
-    <g id="cpl_4c29e392103e_f5099c_text_6">
+   <g id="cpl_4c29e392103e_abb4f7_matplotlib.axis_2">
+    <g id="cpl_4c29e392103e_abb4f7_text_6">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_4c29e392103e_f5099c_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_4c29e392103e_abb4f7_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -1107,35 +1070,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_4c29e392103e_f5099c_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_4c29e392103e_abb4f7_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_line2d_5">
+   <g id="cpl_4c29e392103e_abb4f7_line2d_5">
     <defs>
-     <path id="cpl_4c29e392103e_f5099c_mb8f8d0d6cb" d="M 3 0 
+     <path id="cpl_4c29e392103e_abb4f7_m9228385332" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_4c29e392103e_f5099c_mb8f8d0d6cb" x="447" y="257.211118" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_4c29e392103e_abb4f7_m9228385332" x="447" y="257.211118" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_line2d_6">
+   <g id="cpl_4c29e392103e_abb4f7_line2d_6">
     <defs>
-     <path id="cpl_4c29e392103e_f5099c_m5b1b91329d" d="M 0 -3 
+     <path id="cpl_4c29e392103e_abb4f7_m2ef472d4ac" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_4c29e392103e_f5099c_m5b1b91329d" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_4c29e392103e_abb4f7_m2ef472d4ac" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_line2d_7">
+   <g id="cpl_4c29e392103e_abb4f7_line2d_7">
     <path d="M 10.8 257.210641 
 L 76.111518 257.096604 
 L 93.04512 256.846659 
@@ -1213,24 +1176,24 @@ L 430.492401 256.642651
 L 442.04772 256.942004 
 L 447 257.018795 
 L 447 257.018795 
-" clip-path="url(#cpl_4c29e392103e_f5099c_p1f937e7b77)" style="fill: none; stroke: #0072b2; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#cpl_4c29e392103e_abb4f7_pdd54822269)" style="fill: none; stroke: #0072b2; stroke-width: 4; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_patch_3">
+   <g id="cpl_4c29e392103e_abb4f7_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_patch_4">
+   <g id="cpl_4c29e392103e_abb4f7_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_patch_5">
+   <g id="cpl_4c29e392103e_abb4f7_patch_5">
     <path d="M 10.8 257.211118 
 L 447 257.211118 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4c29e392103e_f5099c_patch_6">
+   <g id="cpl_4c29e392103e_abb4f7_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
@@ -1238,7 +1201,7 @@ L 447 24.444473
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_4c29e392103e_f5099c_p1f937e7b77">
+  <clipPath id="cpl_4c29e392103e_abb4f7_pdd54822269">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -1255,7 +1218,7 @@ f(x) = e^{-x^2 + x}
 <li><p>Bestem en eksakt verdi for det programmet skriver ut. Sjekk svaret ved å kjøre programmet!</p></li>
 </ol>
 <div style="clear: both;"></div>
-        <div id="container-code-c438e66e"></div>
+        <div id="container-code-92a1a86f"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1272,7 +1235,7 @@ while f(x) < f(x + h):
 print(x)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-c438e66e",
+                    "container-code-92a1a86f",
                     code,
                 );
             });
@@ -1292,7 +1255,7 @@ print(x)`;
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T15:07:09.914129</dc:date>
+    <dc:date>2026-09-08T18:12:59.867132</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1305,8 +1268,8 @@ print(x)`;
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_6c4712685f43_f1a591_figure_1">
-  <g id="cpl_6c4712685f43_f1a591_patch_1">
+ <g id="cpl_6c4712685f43_c3b0e2_figure_1">
+  <g id="cpl_6c4712685f43_c3b0e2_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -1315,8 +1278,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_6c4712685f43_f1a591_axes_1">
-   <g id="cpl_6c4712685f43_f1a591_patch_2">
+  <g id="cpl_6c4712685f43_c3b0e2_axes_1">
+   <g id="cpl_6c4712685f43_c3b0e2_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -1325,23 +1288,23 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_matplotlib.axis_1">
-    <g id="cpl_6c4712685f43_f1a591_xtick_1">
-     <g id="cpl_6c4712685f43_f1a591_line2d_1">
+   <g id="cpl_6c4712685f43_c3b0e2_matplotlib.axis_1">
+    <g id="cpl_6c4712685f43_c3b0e2_xtick_1">
+     <g id="cpl_6c4712685f43_c3b0e2_line2d_1">
       <defs>
-       <path id="cpl_6c4712685f43_f1a591_m93c19286a6" d="M 0 0 
+       <path id="cpl_6c4712685f43_c3b0e2_md47cdfd710" d="M 0 0 
 L 0 3.5 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#cpl_6c4712685f43_f1a591_m93c19286a6" x="119.85" y="179.622236" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#cpl_6c4712685f43_c3b0e2_md47cdfd710" x="119.85" y="179.622236" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
-     <g id="cpl_6c4712685f43_f1a591_text_1">
+     <g id="cpl_6c4712685f43_c3b0e2_text_1">
       <!-- $\mathdefault{−1}$ -->
       <g transform="translate(101.373313 207.377732) scale(0.3 -0.3)">
        <defs>
-        <path id="cpl_6c4712685f43_f1a591_CMSY10-0" d="M 4218 1472 
+        <path id="cpl_6c4712685f43_c3b0e2_CMSY10-0" d="M 4218 1472 
 C 4326 1472 4442 1472 4442 1600 
 C 4442 1728 4326 1728 4218 1728 
 L 755 1728 
@@ -1350,7 +1313,7 @@ C 531 1472 646 1472 755 1472
 L 4218 1472 
 z
 " transform="scale(0.015625)"/>
-        <path id="cpl_6c4712685f43_f1a591_CMR17-31" d="M 1702 4058 
+        <path id="cpl_6c4712685f43_c3b0e2_CMR17-31" d="M 1702 4058 
 C 1702 4192 1696 4192 1606 4192 
 C 1357 3916 979 3827 621 3827 
 C 602 3827 570 3827 563 3808 
@@ -1369,29 +1332,29 @@ L 1702 4058
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#cpl_6c4712685f43_f1a591_CMSY10-0" transform="scale(0.996264)"/>
-       <use xlink:href="#cpl_6c4712685f43_f1a591_CMR17-31" transform="translate(77.487468 0) scale(0.996264)"/>
+       <use xlink:href="#cpl_6c4712685f43_c3b0e2_CMSY10-0" transform="scale(0.996264)"/>
+       <use xlink:href="#cpl_6c4712685f43_c3b0e2_CMR17-31" transform="translate(77.487468 0) scale(0.996264)"/>
       </g>
      </g>
     </g>
-    <g id="cpl_6c4712685f43_f1a591_xtick_2">
-     <g id="cpl_6c4712685f43_f1a591_line2d_2">
+    <g id="cpl_6c4712685f43_c3b0e2_xtick_2">
+     <g id="cpl_6c4712685f43_c3b0e2_line2d_2">
       <g>
-       <use xlink:href="#cpl_6c4712685f43_f1a591_m93c19286a6" x="337.95" y="179.622236" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#cpl_6c4712685f43_c3b0e2_md47cdfd710" x="337.95" y="179.622236" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
-     <g id="cpl_6c4712685f43_f1a591_text_2">
+     <g id="cpl_6c4712685f43_c3b0e2_text_2">
       <!-- $\mathdefault{1}$ -->
       <g transform="translate(331.096428 207.377732) scale(0.3 -0.3)">
-       <use xlink:href="#cpl_6c4712685f43_f1a591_CMR17-31" transform="scale(0.996264)"/>
+       <use xlink:href="#cpl_6c4712685f43_c3b0e2_CMR17-31" transform="scale(0.996264)"/>
       </g>
      </g>
     </g>
-    <g id="cpl_6c4712685f43_f1a591_text_3">
+    <g id="cpl_6c4712685f43_c3b0e2_text_3">
      <!-- $x$ -->
      <g transform="translate(430.369782 237.946677) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_6c4712685f43_f1a591_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_6c4712685f43_c3b0e2_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -1425,16 +1388,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_6c4712685f43_f1a591_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_6c4712685f43_c3b0e2_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_matplotlib.axis_2">
-    <g id="cpl_6c4712685f43_f1a591_text_4">
+   <g id="cpl_6c4712685f43_c3b0e2_matplotlib.axis_2">
+    <g id="cpl_6c4712685f43_c3b0e2_text_4">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_6c4712685f43_f1a591_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_6c4712685f43_c3b0e2_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -1468,35 +1431,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_6c4712685f43_f1a591_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_6c4712685f43_c3b0e2_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_line2d_3">
+   <g id="cpl_6c4712685f43_c3b0e2_line2d_3">
     <defs>
-     <path id="cpl_6c4712685f43_f1a591_me3c0d024e3" d="M 3 0 
+     <path id="cpl_6c4712685f43_c3b0e2_ma1986a883f" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_6c4712685f43_f1a591_me3c0d024e3" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_6c4712685f43_c3b0e2_ma1986a883f" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_line2d_4">
+   <g id="cpl_6c4712685f43_c3b0e2_line2d_4">
     <defs>
-     <path id="cpl_6c4712685f43_f1a591_m9a64368bf0" d="M 0 -3 
+     <path id="cpl_6c4712685f43_c3b0e2_m810a3a0736" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_6c4712685f43_f1a591_m9a64368bf0" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_6c4712685f43_c3b0e2_m810a3a0736" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_line2d_5">
+   <g id="cpl_6c4712685f43_c3b0e2_line2d_5">
     <path d="M 10.8 323.036942 
 L 20.544809 307.594227 
 L 29.996741 293.028662 
@@ -1598,24 +1561,24 @@ L 430.146274 62.644147
 L 439.491705 48.14353 
 L 447 36.207531 
 L 447 36.207531 
-" clip-path="url(#cpl_6c4712685f43_f1a591_p3b4d5044a9)" style="fill: none; stroke: #0072b2; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#cpl_6c4712685f43_c3b0e2_pf3c758219f)" style="fill: none; stroke: #0072b2; stroke-width: 4; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_patch_3">
+   <g id="cpl_6c4712685f43_c3b0e2_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_patch_4">
+   <g id="cpl_6c4712685f43_c3b0e2_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_patch_5">
+   <g id="cpl_6c4712685f43_c3b0e2_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6c4712685f43_f1a591_patch_6">
+   <g id="cpl_6c4712685f43_c3b0e2_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
@@ -1623,7 +1586,7 @@ L 447 24.444473
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_6c4712685f43_f1a591_p3b4d5044a9">
+  <clipPath id="cpl_6c4712685f43_c3b0e2_pf3c758219f">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -1651,7 +1614,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-7dc4d775"></div>
+        <div id="container-code-bd61edf2"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1668,7 +1631,7 @@ while (f(x + h) - f(x)) / h < 0:
 print(x)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-7dc4d775",
+                    "container-code-bd61edf2",
                     code,
                 );
             });
@@ -1691,7 +1654,7 @@ f(x) =
 \end{split}\]</div>
 <p>Bruk programmet nedenfor til å bestemme <span class="math notranslate nohighlight">\(f'(1)\)</span>.</p>
 
-        <div id="container-code-a69ee15d"></div>
+        <div id="container-code-0022a231"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1710,7 +1673,7 @@ f_derivert = ????
 print(f_derivert)`;
 
                 makeInteractiveCode(
-                    "container-code-a69ee15d",
+                    "container-code-0022a231",
                     code,
                 );
             });
@@ -1756,17 +1719,15 @@ print(f_derivert)`;
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Innhold
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-Elementaerfunksjoner-i-Python">Elementærfunksjoner i Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
@@ -1821,8 +1782,8 @@ Av René Ask, Edvard Munch Videregående Skole
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
