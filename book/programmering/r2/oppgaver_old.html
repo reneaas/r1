@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" />
@@ -54,17 +54,41 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=b3cda4db" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/masonry.css?v=db25927a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=00170ee0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/figures.css?v=acd93126" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup.css?v=26181dfd" />
@@ -76,33 +100,53 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=fd6d533f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=f9e433e9" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=bc286cc2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
     <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -122,15 +166,37 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
-    <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=ce240afa"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
     <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
+    <script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
     <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
     <script>let toggleHintShow = 'Klikk for å vise';</script>
     <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -157,32 +223,132 @@
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
     <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-    <script src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
-    <script src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
-    <script src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
-    <script src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
-    <script src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
-    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
-    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
     <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
-    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
-    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
+    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
+    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
+    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=079d69da"></script>
+    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
     <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
     <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
     <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
-    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=079d69da"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
     <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
     <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
     <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
-    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
-    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -191,6 +357,7 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="canonical" href="https://www.munchboka.no/r1/book/programmering/r2/oppgaver_old.html" />
     <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -356,62 +523,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../potenser_og_logaritmer/likninger/teori.html">3. Logaritmelikninger og eksponentiallikninger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../potenser_og_logaritmer/oppgavesamling/oppgaver.html">4. Oppgavesamling</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">II. Derivasjon</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/derivasjonsregler_element%C3%A6rfunksjoner/teori.html">5. Derivasjon av elementærfunksjoner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/kjerneregelen/teori.html">6. Kjerneregelen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/produktregelen/teori.html">7. Produktregelen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/br%C3%B8kregelen/teori.html">8. Brøkregelen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/anvendelser_av_derivasjon/oppgaver.html">9. Anvendelser av derivasjon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/optimering/oppgaver.html">10. Oppgaver: Optimering</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">III. Grenseverdier, kontinuitet og deriverbarhet</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../grenseverdier_og_kontinuitet/grenseverdier/teori.html">11. Grenseverdier</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../grenseverdier_og_kontinuitet/grenseverdier/oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../grenseverdier_og_kontinuitet/kontinuitet/teori.html">12. Kontinuitet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../grenseverdier_og_kontinuitet/kontinuitet/oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../derivasjon/deriverbarhet/teori.html">13. Deriverbarhet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../derivasjon/deriverbarhet/oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">IV. Omvendte funksjoner</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/basics/teori.html">14. Omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/basics/teori.html">5. Omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../omvendte_funksjoner/basics/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/derivasjon/teori.html">15. Derivasjon og omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/derivasjon/teori.html">6. Derivasjon og omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../omvendte_funksjoner/derivasjon/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/blandet/oppgaver.html">16. Blandede oppgaver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/summary.html">17. Oppsummering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/blandet/oppgaver.html">7. Blandede oppgaver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/summary.html">8. Oppsummering</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">V. Vektorregning</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer/teori.html">18. Vektorer</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer/teori.html">9. Vektorer</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/vektorer/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer_i_koordinatsystem/teori.html">19. Vektorer i koordinatsystemet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer_i_koordinatsystem/teori.html">10. Vektorer i koordinatsystemet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/vektorer_i_koordinatsystem/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/skalarproduktet/teori.html">20. Skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/skalarproduktet/teori.html">11. Skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/skalarproduktet/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/anvendelser_av_skalarproduktet/teori.html">21. Anvendelser av skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/anvendelser_av_skalarproduktet/teori.html">12. Anvendelser av skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/anvendelser_av_skalarproduktet/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../vektorregning/vektorfunksjoner/teori.html">22. Vektorfunksjoner</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">CAS</span></p>
 <ul class="nav bd-sidenav">
@@ -429,13 +571,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/h2025/oppgaver.html">Eksamen høsten 2025</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/eksempelsett/oppgaver.html">Eksempelsett vår 2026</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="teori.html">Programmering av tallfølger</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jeopardy</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../jeopardy/derivasjon/jeopardy.html">Derivasjonsregler</a></li>
@@ -445,7 +580,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../oversikt/formler.html">Formler</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensressurser</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Digitale verktøy</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.geogebra.org/classic">Geogebra</a></li>
@@ -633,7 +768,7 @@ document.write(`
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-8802f808985e4ef0b32727192967acba" class="quiz-main-container"></div>
+        <div id="quiz-container-a8eec0176219465aa2c79c0c059022bd" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -645,7 +780,7 @@ document.write(`
                 const questionsData = [{"content": "Hvilke tall skrives ut av programmet nedenfor?  <pre><code class=\"python\">for n in range(-2, 3):\n    print(n)</code></pre>", "answers": [{"content": "$-2, -1, 0, 1, 2$", "isCorrect": true}, {"content": "$-2, 3$", "isCorrect": false}, {"content": "$-2, -1, 0, 1, 2, 3$", "isCorrect": false}, {"content": "$-2, 1, 3$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(4):\n    print(n)</code></pre>", "answers": [{"content": "$0, 1, 2, 3$", "isCorrect": true}, {"content": "$0, 1, 2, 3, 4$", "isCorrect": false}, {"content": "$4$", "isCorrect": false}, {"content": "$1, 2, 3, 4$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(-2, 2, 1):\n    print(n)</code></pre>", "answers": [{"content": "$-2, -1, 0, 1$", "isCorrect": true}, {"content": "$-2, 2, 1$", "isCorrect": false}, {"content": "$-2, -1, 0, 1, 2$", "isCorrect": false}, {"content": "$-1, 0, 1, 2$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(1, 6, 2):\n    print(n)</code></pre>", "answers": [{"content": "$1, 3, 5$", "isCorrect": true}, {"content": "$1, 6, 2$", "isCorrect": false}, {"content": "$1, 2, 6$", "isCorrect": false}, {"content": "$1, 3, 5, 6$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(1, 10, 3):\n    print(n)</code></pre>", "answers": [{"content": "$1, 4, 7$", "isCorrect": true}, {"content": "$1, 4, 7, 10$", "isCorrect": false}, {"content": "$1, 3, 10$", "isCorrect": false}, {"content": "$1, 10, 3$", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(0, 101, 10):\n    print(n)</code></pre>", "answers": [{"content": "$0, 10, 20, \\ldots, 90, 100$", "isCorrect": true}, {"content": "$0, 10, 20, \\ldots, 90$", "isCorrect": false}, {"content": "$0, 101, 10$", "isCorrect": false}, {"content": "$0, 10, 100$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-8802f808985e4ef0b32727192967acba', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-a8eec0176219465aa2c79c0c059022bd', questionsData);
             });
         </script>
         </div>
@@ -661,7 +796,7 @@ document.write(`
 <label class="sd-tab-label" for="sd-tab-item-0">
 a</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-5c7ac4a5"></div>
+        <div id="container-code-c6c2690a"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -669,7 +804,7 @@ a</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-5c7ac4a5",
+                    "container-code-c6c2690a",
                     code,
                 );
             });
@@ -679,7 +814,7 @@ a</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-1">
 b</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-3e309ac3"></div>
+        <div id="container-code-d8411827"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -688,7 +823,7 @@ b</label><div class="sd-tab-content docutils">
     `;
 
                 makePredictionInteractiveCode(
-                    "container-code-3e309ac3",
+                    "container-code-d8411827",
                     code,
                 );
             });
@@ -698,7 +833,7 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-2">
 c</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-68bcdaa0"></div>
+        <div id="container-code-b67be0ae"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -706,7 +841,7 @@ c</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-68bcdaa0",
+                    "container-code-b67be0ae",
                     code,
                 );
             });
@@ -716,7 +851,7 @@ c</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-3">
 d</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-106a1110"></div>
+        <div id="container-code-097e8f80"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -725,7 +860,7 @@ d</label><div class="sd-tab-content docutils">
     `;
 
                 makePredictionInteractiveCode(
-                    "container-code-106a1110",
+                    "container-code-097e8f80",
                     code,
                 );
             });
@@ -748,7 +883,7 @@ a</label><div class="sd-tab-content docutils">
 1, 2, 3, 4, 5, 6, 7, 8.
 \]</div>
 
-        <div id="container-code-92f0ef97"></div>
+        <div id="container-code-7e6f920d"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -756,7 +891,7 @@ a</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-92f0ef97",
+                    "container-code-7e6f920d",
                     code,
                 );
             });
@@ -779,7 +914,7 @@ b</label><div class="sd-tab-content docutils">
 2, 4, 6, 8.
 \]</div>
 
-        <div id="container-code-f8e685b8"></div>
+        <div id="container-code-5ef56edf"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -787,7 +922,7 @@ b</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-f8e685b8",
+                    "container-code-5ef56edf",
                     code,
                 );
             });
@@ -810,7 +945,7 @@ c</label><div class="sd-tab-content docutils">
 1, 5, 9, 13. 
 \]</div>
 
-        <div id="container-code-4d332387"></div>
+        <div id="container-code-97ff65f4"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -818,7 +953,7 @@ c</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-4d332387",
+                    "container-code-97ff65f4",
                     code,
                 );
             });
@@ -841,7 +976,7 @@ d</label><div class="sd-tab-content docutils">
 -5, -3, -1, 1, 3, 5. 
 \]</div>
 
-        <div id="container-code-d5da3b68"></div>
+        <div id="container-code-95cfef4d"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -849,7 +984,7 @@ d</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-d5da3b68",
+                    "container-code-95cfef4d",
                     code,
                 );
             });
@@ -880,7 +1015,7 @@ a</label><div class="sd-tab-content docutils">
 10, 6, 2
 \]</div>
 
-        <div id="container-code-7d7ecad1"></div>
+        <div id="container-code-fea14ed1"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -890,7 +1025,7 @@ a</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-7d7ecad1",
+                    "container-code-fea14ed1",
                     code,
                 );
             });
@@ -913,7 +1048,7 @@ b</label><div class="sd-tab-content docutils">
 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0
 \]</div>
 
-        <div id="container-code-b16756db"></div>
+        <div id="container-code-ef8393f5"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -923,7 +1058,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-b16756db",
+                    "container-code-ef8393f5",
                     code,
                 );
             });
@@ -946,7 +1081,7 @@ c</label><div class="sd-tab-content docutils">
 5, 3, 1, -1, -3, -5
 \]</div>
 
-        <div id="container-code-843fe27b"></div>
+        <div id="container-code-8f86c754"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -956,7 +1091,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-843fe27b",
+                    "container-code-8f86c754",
                     code,
                 );
             });
@@ -979,7 +1114,7 @@ d</label><div class="sd-tab-content docutils">
 -2, -5, -8, -11, -14
 \]</div>
 
-        <div id="container-code-73dc7672"></div>
+        <div id="container-code-dc093e34"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -989,7 +1124,7 @@ d</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-73dc7672",
+                    "container-code-dc093e34",
                     code,
                 );
             });
@@ -1016,7 +1151,7 @@ d</label><div class="sd-tab-content docutils">
 a</label><div class="sd-tab-content docutils">
 <p>Fyll ut programmet nedenfor slik at det skriver ut alle partallene til og med <span class="math notranslate nohighlight">\(20\)</span>.</p>
 
-        <div id="container-code-fd696c63"></div>
+        <div id="container-code-ceff84dc"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1024,7 +1159,7 @@ a</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-fd696c63",
+                    "container-code-ceff84dc",
                     code,
                 );
             });
@@ -1043,7 +1178,7 @@ a</label><div class="sd-tab-content docutils">
 b</label><div class="sd-tab-content docutils">
 <p>Fyll ut programmet nedenfor slik at det skriver ut alle oddetallene til og med <span class="math notranslate nohighlight">\(21\)</span>.</p>
 
-        <div id="container-code-58e59028"></div>
+        <div id="container-code-0805a427"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1051,7 +1186,7 @@ b</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-58e59028",
+                    "container-code-0805a427",
                     code,
                 );
             });
@@ -1070,7 +1205,7 @@ b</label><div class="sd-tab-content docutils">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut de <span class="math notranslate nohighlight">\(20\)</span> <strong>første</strong> partallene.</p>
 
-        <div id="container-code-47a732b0"></div>
+        <div id="container-code-695eea26"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1079,7 +1214,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-47a732b0",
+                    "container-code-695eea26",
                     code,
                 );
             });
@@ -1099,7 +1234,7 @@ c</label><div class="sd-tab-content docutils">
 d</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut de <span class="math notranslate nohighlight">\(20\)</span> <strong>første</strong> oddetallene.</p>
 
-        <div id="container-code-06ce5346"></div>
+        <div id="container-code-aecd0829"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1108,7 +1243,7 @@ d</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-06ce5346",
+                    "container-code-aecd0829",
                     code,
                 );
             });
@@ -1141,7 +1276,7 @@ d</label><div class="sd-tab-content docutils">
 a</label><div class="sd-tab-content docutils">
 <p>Fyll ut programmet nedenfor slik at det skriver ut alle partallene til og med <span class="math notranslate nohighlight">\(20\)</span> ved hjelp av en <code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-setning.</p>
 
-        <div id="container-code-1a57a0f7"></div>
+        <div id="container-code-0c57ac57"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1151,7 +1286,7 @@ a</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-1a57a0f7",
+                    "container-code-0c57ac57",
                     code,
                 );
             });
@@ -1166,7 +1301,7 @@ b</label><div class="sd-tab-content docutils">
 </div></div><br>
 <p>Bruk strategien til Alma og Synne i programmet nedenfor.</p>
 
-        <div id="container-code-3b1478c0"></div>
+        <div id="container-code-0b5d7137"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1178,7 +1313,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-3b1478c0",
+                    "container-code-0b5d7137",
                     code,
                 );
             });
@@ -1221,7 +1356,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-cf21ff34"></div>
+        <div id="container-code-c874cc39"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1231,7 +1366,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-cf21ff34",
+                    "container-code-c874cc39",
                     code,
                 );
             });
@@ -1311,7 +1446,7 @@ S = 2 + 4 + 6 + \ldots + 98 + 100
 </div>
 </div>
 
-        <div id="container-code-f1b49d37"></div>
+        <div id="container-code-d2f99c17"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1322,7 +1457,7 @@ for n in range(1, 6):
 print(s)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-f1b49d37",
+                    "container-code-d2f99c17",
                     code,
                 );
             });
@@ -1358,7 +1493,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-7e438968"></div>
+        <div id="container-code-59af04c6"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1369,7 +1504,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-7e438968",
+                    "container-code-59af04c6",
                     code,
                 );
             });
@@ -1417,7 +1552,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-1a8776c7"></div>
+        <div id="container-code-4c0f91c5"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1428,7 +1563,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-1a8776c7",
+                    "container-code-4c0f91c5",
                     code,
                 );
             });
@@ -1476,7 +1611,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-4d27945a"></div>
+        <div id="container-code-eee3279c"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1487,7 +1622,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-4d27945a",
+                    "container-code-eee3279c",
                     code,
                 );
             });
@@ -1551,7 +1686,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-f8096ff4"></div>
+        <div id="container-code-db96f340"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1561,7 +1696,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-f8096ff4",
+                    "container-code-db96f340",
                     code,
                 );
             });
@@ -1639,7 +1774,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-a2b14afd"></div>
+        <div id="container-code-e3f3795e"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1649,7 +1784,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-a2b14afd",
+                    "container-code-e3f3795e",
                     code,
                 );
             });
@@ -1726,7 +1861,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-c18a5084"></div>
+        <div id="container-code-48176ff0"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1737,7 +1872,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-c18a5084",
+                    "container-code-48176ff0",
                     code,
                 );
             });
@@ -1803,7 +1938,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-71555863"></div>
+        <div id="container-code-b4c5efb6"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1813,7 +1948,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-71555863",
+                    "container-code-b4c5efb6",
                     code,
                 );
             });
@@ -1849,7 +1984,7 @@ b</label><div class="sd-tab-content docutils">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program med utgangspunkt i algoritmen din fra <strong>b</strong> og regn ut en tilnærming til <span class="math notranslate nohighlight">\(\pi\)</span>.</p>
 
-        <div id="container-code-d0e303b1"></div>
+        <div id="container-code-3fd7da01"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1859,7 +1994,7 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-d0e303b1",
+                    "container-code-3fd7da01",
                     code,
                 );
             });
@@ -1906,7 +2041,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 
-        <div id="container-code-bd7fec74"></div>
+        <div id="container-code-0a1f876c"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1916,7 +2051,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-bd7fec74",
+                    "container-code-0a1f876c",
                     code,
                 );
             });

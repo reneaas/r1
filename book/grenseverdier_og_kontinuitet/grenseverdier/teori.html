@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>11. Grenseverdier &#8212; Matematikk R1</title>
+    <title>Grenseverdier &#8212; Matematikk R1</title>
   
   
   
@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" />
@@ -54,17 +54,41 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=b3cda4db" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/masonry.css?v=db25927a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=00170ee0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/figures.css?v=acd93126" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup.css?v=26181dfd" />
@@ -76,33 +100,53 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=fd6d533f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=f9e433e9" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=bc286cc2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
     <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -122,15 +166,37 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
-    <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=ce240afa"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
     <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
+    <script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
     <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
     <script>let toggleHintShow = 'Klikk for å vise';</script>
     <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -157,32 +223,132 @@
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
     <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-    <script src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
-    <script src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
-    <script src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
-    <script src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
-    <script src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
-    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
-    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
     <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
-    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
-    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
+    <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
+    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
+    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=079d69da"></script>
+    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
     <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
     <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
     <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
-    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=079d69da"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
     <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
     <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
     <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
-    <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
-    <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -191,12 +357,11 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="canonical" href="https://www.munchboka.no/r1/book/grenseverdier_og_kontinuitet/grenseverdier/teori.html" />
     <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Oppgaver: Grenseverdier" href="oppgaver.html" />
-    <link rel="prev" title="10. Oppgaver: Optimering" href="../../derivasjon/optimering/oppgaver.html" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
@@ -296,6 +461,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -356,62 +523,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../potenser_og_logaritmer/likninger/teori.html">3. Logaritmelikninger og eksponentiallikninger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../potenser_og_logaritmer/oppgavesamling/oppgaver.html">4. Oppgavesamling</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">II. Derivasjon</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/derivasjonsregler_element%C3%A6rfunksjoner/teori.html">5. Derivasjon av elementærfunksjoner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/kjerneregelen/teori.html">6. Kjerneregelen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/produktregelen/teori.html">7. Produktregelen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/br%C3%B8kregelen/teori.html">8. Brøkregelen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/anvendelser_av_derivasjon/oppgaver.html">9. Anvendelser av derivasjon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../derivasjon/optimering/oppgaver.html">10. Oppgaver: Optimering</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">III. Grenseverdier, kontinuitet og deriverbarhet</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">11. Grenseverdier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../kontinuitet/teori.html">12. Kontinuitet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../kontinuitet/oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../derivasjon/deriverbarhet/teori.html">13. Deriverbarhet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../derivasjon/deriverbarhet/oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">IV. Omvendte funksjoner</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/basics/teori.html">14. Omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/basics/teori.html">5. Omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../omvendte_funksjoner/basics/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/derivasjon/teori.html">15. Derivasjon og omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../omvendte_funksjoner/derivasjon/teori.html">6. Derivasjon og omvendte funksjoner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../omvendte_funksjoner/derivasjon/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/blandet/oppgaver.html">16. Blandede oppgaver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/summary.html">17. Oppsummering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/blandet/oppgaver.html">7. Blandede oppgaver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../omvendte_funksjoner/summary.html">8. Oppsummering</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">V. Vektorregning</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer/teori.html">18. Vektorer</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer/teori.html">9. Vektorer</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/vektorer/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer_i_koordinatsystem/teori.html">19. Vektorer i koordinatsystemet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/vektorer_i_koordinatsystem/teori.html">10. Vektorer i koordinatsystemet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/vektorer_i_koordinatsystem/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/skalarproduktet/teori.html">20. Skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/skalarproduktet/teori.html">11. Skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/skalarproduktet/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/anvendelser_av_skalarproduktet/teori.html">21. Anvendelser av skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vektorregning/anvendelser_av_skalarproduktet/teori.html">12. Anvendelser av skalarproduktet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vektorregning/anvendelser_av_skalarproduktet/oppgaver.html">Oppgaver</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../vektorregning/vektorfunksjoner/teori.html">22. Vektorfunksjoner</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">CAS</span></p>
 <ul class="nav bd-sidenav">
@@ -429,13 +571,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/h2025/oppgaver.html">Eksamen høsten 2025</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/eksempelsett/oppgaver.html">Eksempelsett vår 2026</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../programmering/r2/teori.html">Programmering av tallfølger</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../programmering/r2/oppgaver.html">Oppgaver</a></li>
-</ul>
-</details></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jeopardy</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../jeopardy/derivasjon/jeopardy.html">Derivasjonsregler</a></li>
@@ -445,7 +580,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../oversikt/formler.html">Formler</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensressurser</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Digitale verktøy</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.geogebra.org/classic">Geogebra</a></li>
@@ -633,7 +768,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="grenseverdier">
-<h1><span class="section-number">11. </span>Grenseverdier<a class="headerlink" href="#grenseverdier" title="Link to this heading">#</a></h1>
+<h1>Grenseverdier<a class="headerlink" href="#grenseverdier" title="Link to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Læringsmål</p>
 <ul class="simple">
@@ -706,7 +841,7 @@ document.write(`
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-08T18:12:52.641483</dc:date>
+    <dc:date>2026-10-13T16:59:46.335459</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -719,8 +854,8 @@ document.write(`
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_d93ef804e822_052069_figure_1">
-  <g id="cpl_d93ef804e822_052069_patch_1">
+ <g id="cpl_d93ef804e822_77caf7_figure_1">
+  <g id="cpl_d93ef804e822_77caf7_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -729,8 +864,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_d93ef804e822_052069_axes_1">
-   <g id="cpl_d93ef804e822_052069_patch_2">
+  <g id="cpl_d93ef804e822_77caf7_axes_1">
+   <g id="cpl_d93ef804e822_77caf7_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 22.230394 
@@ -739,12 +874,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_matplotlib.axis_1">
-    <g id="cpl_d93ef804e822_052069_text_1">
+   <g id="cpl_d93ef804e822_77caf7_matplotlib.axis_1">
+    <g id="cpl_d93ef804e822_77caf7_text_1">
      <!-- $x$ -->
      <g transform="translate(433.141493 251.906385) scale(0.25 -0.25)">
       <defs>
-       <path id="cpl_d93ef804e822_052069_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_d93ef804e822_77caf7_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -778,16 +913,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d93ef804e822_052069_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d93ef804e822_77caf7_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_matplotlib.axis_2">
-    <g id="cpl_d93ef804e822_052069_text_2">
+   <g id="cpl_d93ef804e822_77caf7_matplotlib.axis_2">
+    <g id="cpl_d93ef804e822_77caf7_text_2">
      <!-- $y$ -->
      <g transform="translate(91.842286 17.38586) scale(0.25 -0.25)">
       <defs>
-       <path id="cpl_d93ef804e822_052069_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_d93ef804e822_77caf7_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -821,35 +956,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d93ef804e822_052069_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d93ef804e822_77caf7_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_1">
+   <g id="cpl_d93ef804e822_77caf7_line2d_1">
     <defs>
-     <path id="cpl_d93ef804e822_052069_m9b35848638" d="M 3 0 
+     <path id="cpl_d93ef804e822_77caf7_ma8b280a4b6" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_d93ef804e822_052069_m9b35848638" x="447" y="230.610131" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d93ef804e822_77caf7_ma8b280a4b6" x="447" y="230.610131" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_2">
+   <g id="cpl_d93ef804e822_77caf7_line2d_2">
     <defs>
-     <path id="cpl_d93ef804e822_052069_mae7f1f4493" d="M 0 -3 
+     <path id="cpl_d93ef804e822_77caf7_m3aaa71722a" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_d93ef804e822_052069_mae7f1f4493" x="107.733333" y="22.230394" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d93ef804e822_77caf7_m3aaa71722a" x="107.733333" y="22.230394" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_3">
+   <g id="cpl_d93ef804e822_77caf7_line2d_3">
     <path d="M 13.499727 -1 
 L 19.17805 22.483623 
 L 24.769334 44.675656 
@@ -916,49 +1051,49 @@ L 246.264042 180.141986
 L 250.89682 167.486775 
 L 253.133333 161.150219 
 L 253.133333 161.150219 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_4">
+   <g id="cpl_d93ef804e822_77caf7_line2d_4">
     <path d="M 253.133333 161.150219 
 L 447.008875 22.224034 
 L 447.008875 22.224034 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_LineCollection_1">
+   <g id="cpl_d93ef804e822_77caf7_LineCollection_1">
     <path d="M 253.133333 230.610131 
 L 253.133333 161.150219 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_LineCollection_2">
+   <g id="cpl_d93ef804e822_77caf7_LineCollection_2">
     <path d="M 107.733333 161.150219 
 L 253.133333 161.150219 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_patch_3">
+   <g id="cpl_d93ef804e822_77caf7_patch_3">
     <path d="M 107.733333 334.8 
 L 107.733333 22.230394 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_patch_4">
+   <g id="cpl_d93ef804e822_77caf7_patch_4">
     <path d="M 447 334.8 
 L 447 22.230394 
 " style="fill: none"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_patch_5">
+   <g id="cpl_d93ef804e822_77caf7_patch_5">
     <path d="M 10.8 230.610131 
 L 447 230.610131 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_patch_6">
+   <g id="cpl_d93ef804e822_77caf7_patch_6">
     <path d="M 10.8 22.230394 
 L 447 22.230394 
 " style="fill: none"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_text_3">
+   <g id="cpl_d93ef804e822_77caf7_text_3">
     <!-- $a$ -->
     <g transform="translate(246.732357 252.594929) scale(0.25 -0.25)">
      <defs>
-      <path id="cpl_d93ef804e822_052069_CMMI12-61" d="M 1926 760 
+      <path id="cpl_d93ef804e822_77caf7_CMMI12-61" d="M 1926 760 
 C 1894 651 1894 639 1805 517 
 C 1664 338 1382 64 1082 64 
 C 819 64 672 300 672 677 
@@ -988,14 +1123,14 @@ C 2400 2695 2349 2472 2336 2395
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_d93ef804e822_052069_CMMI12-61" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_d93ef804e822_77caf7_CMMI12-61" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_text_4">
+   <g id="cpl_d93ef804e822_77caf7_text_4">
     <!-- $L$ -->
     <g transform="translate(84.597618 167.376078) scale(0.25 -0.25)">
      <defs>
-      <path id="cpl_d93ef804e822_052069_CMMI12-4c" d="M 2349 3861 
+      <path id="cpl_d93ef804e822_77caf7_CMMI12-4c" d="M 2349 3861 
 C 2406 4103 2426 4167 2989 4167 
 C 3162 4167 3206 4167 3206 4288 
 C 3206 4352 3136 4352 3110 4352 
@@ -1026,11 +1161,11 @@ L 2349 3861
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_d93ef804e822_052069_CMMI12-4c" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_d93ef804e822_77caf7_CMMI12-4c" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_legend_1">
-    <g id="cpl_d93ef804e822_052069_patch_7">
+   <g id="cpl_d93ef804e822_77caf7_legend_1">
+    <g id="cpl_d93ef804e822_77caf7_patch_7">
      <path d="M 337.479191 322.3 
 L 429.5 322.3 
 Q 434.5 322.3 434.5 317.3 
@@ -1043,17 +1178,17 @@ Q 332.479191 322.3 337.479191 322.3
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
-    <g id="cpl_d93ef804e822_052069_line2d_5">
+    <g id="cpl_d93ef804e822_77caf7_line2d_5">
      <path d="M 342.479191 298.705466 
 L 367.479191 298.705466 
 L 392.479191 298.705466 
 " style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
     </g>
-    <g id="cpl_d93ef804e822_052069_text_5">
+    <g id="cpl_d93ef804e822_77caf7_text_5">
      <!-- $f$ -->
      <g transform="translate(412.479191 307.455466) scale(0.25 -0.25)">
       <defs>
-       <path id="cpl_d93ef804e822_052069_CMMI12-66" d="M 2854 2566 
+       <path id="cpl_d93ef804e822_77caf7_CMMI12-66" d="M 2854 2566 
 C 2982 2566 3034 2566 3034 2688 
 C 3034 2752 2982 2752 2867 2752 
 L 2349 2752 
@@ -1083,51 +1218,51 @@ L 2854 2566
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d93ef804e822_052069_CMMI12-66" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d93ef804e822_77caf7_CMMI12-66" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_6">
-    <path clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+   <g id="cpl_d93ef804e822_77caf7_line2d_6">
+    <path clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_7">
-    <path clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+   <g id="cpl_d93ef804e822_77caf7_line2d_7">
+    <path clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_8">
+   <g id="cpl_d93ef804e822_77caf7_line2d_8">
     <path d="M 253.133333 161.150219 
 L 242.738143 163.623601 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_9">
+   <g id="cpl_d93ef804e822_77caf7_line2d_9">
     <path d="M 253.133333 161.150219 
 L 259.733255 169.553709 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_10">
+   <g id="cpl_d93ef804e822_77caf7_line2d_10">
     <path d="M 258.375556 168.465894 
 L 247.89111 153.834544 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_11">
+   <g id="cpl_d93ef804e822_77caf7_line2d_11">
     <path d="M 247.89111 153.834544 
 L 252.573142 150.479521 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_12">
+   <g id="cpl_d93ef804e822_77caf7_line2d_12">
     <path d="M 258.375556 168.465894 
 L 263.057588 165.110871 
-" clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+" clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_13">
-    <path clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+   <g id="cpl_d93ef804e822_77caf7_line2d_13">
+    <path clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
-   <g id="cpl_d93ef804e822_052069_line2d_14">
-    <path clip-path="url(#cpl_d93ef804e822_052069_p94ac95354d)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
+   <g id="cpl_d93ef804e822_77caf7_line2d_14">
+    <path clip-path="url(#cpl_d93ef804e822_77caf7_p971a02c6b3)" style="fill: none; stroke: #0072b2; stroke-width: 2"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_d93ef804e822_052069_p94ac95354d">
+  <clipPath id="cpl_d93ef804e822_77caf7_p971a02c6b3">
    <rect x="10.8" y="22.230394" width="436.2" height="312.569606"/>
   </clipPath>
  </defs>
@@ -1142,7 +1277,7 @@ L 263.057588 165.110871
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-08T18:12:53.804018</dc:date>
+    <dc:date>2026-10-13T16:59:47.426642</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1155,8 +1290,8 @@ L 263.057588 165.110871
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_1c7e3c83574a_0880ae_figure_1">
-  <g id="cpl_1c7e3c83574a_0880ae_patch_1">
+ <g id="cpl_1c7e3c83574a_6e06ee_figure_1">
+  <g id="cpl_1c7e3c83574a_6e06ee_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -1165,8 +1300,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_1c7e3c83574a_0880ae_axes_1">
-   <g id="cpl_1c7e3c83574a_0880ae_patch_2">
+  <g id="cpl_1c7e3c83574a_6e06ee_axes_1">
+   <g id="cpl_1c7e3c83574a_6e06ee_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 22.230394 
@@ -1175,12 +1310,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_matplotlib.axis_1">
-    <g id="cpl_1c7e3c83574a_0880ae_text_1">
+   <g id="cpl_1c7e3c83574a_6e06ee_matplotlib.axis_1">
+    <g id="cpl_1c7e3c83574a_6e06ee_text_1">
      <!-- $x$ -->
      <g transform="translate(433.141493 251.906385) scale(0.25 -0.25)">
       <defs>
-       <path id="cpl_1c7e3c83574a_0880ae_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_1c7e3c83574a_6e06ee_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -1214,16 +1349,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_matplotlib.axis_2">
-    <g id="cpl_1c7e3c83574a_0880ae_text_2">
+   <g id="cpl_1c7e3c83574a_6e06ee_matplotlib.axis_2">
+    <g id="cpl_1c7e3c83574a_6e06ee_text_2">
      <!-- $y$ -->
      <g transform="translate(91.842286 17.38586) scale(0.25 -0.25)">
       <defs>
-       <path id="cpl_1c7e3c83574a_0880ae_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_1c7e3c83574a_6e06ee_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -1257,35 +1392,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_1">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_1">
     <defs>
-     <path id="cpl_1c7e3c83574a_0880ae_ma26c4b5c10" d="M 3 0 
+     <path id="cpl_1c7e3c83574a_6e06ee_m58edf4c215" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_ma26c4b5c10" x="447" y="230.610131" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_m58edf4c215" x="447" y="230.610131" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_2">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_2">
     <defs>
-     <path id="cpl_1c7e3c83574a_0880ae_maf2fb909f4" d="M 0 -3 
+     <path id="cpl_1c7e3c83574a_6e06ee_m312ec222a0" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_maf2fb909f4" x="107.733333" y="22.230394" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_m312ec222a0" x="107.733333" y="22.230394" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_3">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_3">
     <path d="M 13.499727 -1 
 L 19.17805 22.483623 
 L 24.769334 44.675656 
@@ -1352,54 +1487,54 @@ L 246.264042 180.141986
 L 250.89682 167.486775 
 L 253.133333 161.150219 
 L 253.133333 161.150219 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_4">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_4">
     <path d="M 253.133333 91.690306 
 L 382.485359 -1 
 L 382.485359 -1 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_LineCollection_1">
+   <g id="cpl_1c7e3c83574a_6e06ee_LineCollection_1">
     <path d="M 253.133333 230.610131 
 L 253.133333 91.690306 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_LineCollection_2">
+   <g id="cpl_1c7e3c83574a_6e06ee_LineCollection_2">
     <path d="M 107.733333 161.150219 
 L 253.133333 161.150219 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_LineCollection_3">
+   <g id="cpl_1c7e3c83574a_6e06ee_LineCollection_3">
     <path d="M 107.733333 91.690306 
 L 253.133333 91.690306 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_patch_3">
+   <g id="cpl_1c7e3c83574a_6e06ee_patch_3">
     <path d="M 107.733333 334.8 
 L 107.733333 22.230394 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_patch_4">
+   <g id="cpl_1c7e3c83574a_6e06ee_patch_4">
     <path d="M 447 334.8 
 L 447 22.230394 
 " style="fill: none"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_patch_5">
+   <g id="cpl_1c7e3c83574a_6e06ee_patch_5">
     <path d="M 10.8 230.610131 
 L 447 230.610131 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_patch_6">
+   <g id="cpl_1c7e3c83574a_6e06ee_patch_6">
     <path d="M 10.8 22.230394 
 L 447 22.230394 
 " style="fill: none"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_text_3">
+   <g id="cpl_1c7e3c83574a_6e06ee_text_3">
     <!-- $a$ -->
     <g transform="translate(246.732357 252.594929) scale(0.25 -0.25)">
      <defs>
-      <path id="cpl_1c7e3c83574a_0880ae_CMMI12-61" d="M 1926 760 
+      <path id="cpl_1c7e3c83574a_6e06ee_CMMI12-61" d="M 1926 760 
 C 1894 651 1894 639 1805 517 
 C 1664 338 1382 64 1082 64 
 C 819 64 672 300 672 677 
@@ -1429,14 +1564,14 @@ C 2400 2695 2349 2472 2336 2395
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMMI12-61" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMMI12-61" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_text_4">
+   <g id="cpl_1c7e3c83574a_6e06ee_text_4">
     <!-- $L_1$ -->
     <g transform="translate(76.60183 167.376078) scale(0.25 -0.25)">
      <defs>
-      <path id="cpl_1c7e3c83574a_0880ae_CMMI12-4c" d="M 2349 3861 
+      <path id="cpl_1c7e3c83574a_6e06ee_CMMI12-4c" d="M 2349 3861 
 C 2406 4103 2426 4167 2989 4167 
 C 3162 4167 3206 4167 3206 4288 
 C 3206 4352 3136 4352 3110 4352 
@@ -1466,7 +1601,7 @@ C 1453 307 1466 345 1478 401
 L 2349 3861 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_1c7e3c83574a_0880ae_CMR17-31" d="M 1702 4058 
+      <path id="cpl_1c7e3c83574a_6e06ee_CMR17-31" d="M 1702 4058 
 C 1702 4192 1696 4192 1606 4192 
 C 1357 3916 979 3827 621 3827 
 C 602 3827 570 3827 563 3808 
@@ -1485,15 +1620,15 @@ L 1702 4058
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMMI12-4c" transform="scale(0.996264)"/>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMR17-31" transform="translate(66.370875 -14.943915) scale(0.697382)"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMMI12-4c" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMR17-31" transform="translate(66.370875 -14.943915) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_text_5">
+   <g id="cpl_1c7e3c83574a_6e06ee_text_5">
     <!-- $L_2$ -->
     <g transform="translate(76.60183 97.916166) scale(0.25 -0.25)">
      <defs>
-      <path id="cpl_1c7e3c83574a_0880ae_CMR17-32" d="M 2669 989 
+      <path id="cpl_1c7e3c83574a_6e06ee_CMR17-32" d="M 2669 989 
 L 2554 989 
 C 2490 536 2438 459 2413 420 
 C 2381 369 1920 369 1830 369 
@@ -1516,12 +1651,12 @@ L 2669 989
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMMI12-4c" transform="scale(0.996264)"/>
-     <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMR17-32" transform="translate(66.370875 -14.943915) scale(0.697382)"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMMI12-4c" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMR17-32" transform="translate(66.370875 -14.943915) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_legend_1">
-    <g id="cpl_1c7e3c83574a_0880ae_patch_7">
+   <g id="cpl_1c7e3c83574a_6e06ee_legend_1">
+    <g id="cpl_1c7e3c83574a_6e06ee_patch_7">
      <path d="M 337.82228 77.074928 
 L 429.5 77.074928 
 Q 434.5 77.074928 434.5 72.074928 
@@ -1534,17 +1669,17 @@ Q 332.82228 77.074928 337.82228 77.074928
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
-    <g id="cpl_1c7e3c83574a_0880ae_line2d_5">
+    <g id="cpl_1c7e3c83574a_6e06ee_line2d_5">
      <path d="M 342.82228 53.480394 
 L 367.82228 53.480394 
 L 392.82228 53.480394 
 " style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
     </g>
-    <g id="cpl_1c7e3c83574a_0880ae_text_6">
+    <g id="cpl_1c7e3c83574a_6e06ee_text_6">
      <!-- $g$ -->
      <g transform="translate(412.82228 62.230394) scale(0.25 -0.25)">
       <defs>
-       <path id="cpl_1c7e3c83574a_0880ae_CMMI12-67" d="M 2163 811 
+       <path id="cpl_1c7e3c83574a_6e06ee_CMMI12-67" d="M 2163 811 
 C 2138 709 2125 683 2042 588 
 C 1779 249 1510 128 1312 128 
 C 1101 128 902 294 902 734 
@@ -1575,51 +1710,51 @@ C 2669 2695 2579 2567 2560 2395
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_1c7e3c83574a_0880ae_CMMI12-67" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_1c7e3c83574a_6e06ee_CMMI12-67" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_6">
-    <path clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_6">
+    <path clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_7">
-    <path clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_7">
+    <path clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_8">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_8">
     <path d="M 253.133333 161.150219 
 L 242.738143 163.623601 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_9">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_9">
     <path d="M 253.133333 161.150219 
 L 259.733255 169.553709 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_10">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_10">
     <path d="M 258.375556 99.005981 
 L 247.89111 84.374632 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_11">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_11">
     <path d="M 247.89111 84.374632 
 L 252.573142 81.019609 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_12">
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_12">
     <path d="M 258.375556 99.005981 
 L 263.057588 95.650959 
-" clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+" clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_13">
-    <path clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_13">
+    <path clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
-   <g id="cpl_1c7e3c83574a_0880ae_line2d_14">
-    <path clip-path="url(#cpl_1c7e3c83574a_0880ae_p30e227040a)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
+   <g id="cpl_1c7e3c83574a_6e06ee_line2d_14">
+    <path clip-path="url(#cpl_1c7e3c83574a_6e06ee_p281132671d)" style="fill: none; stroke: #dc5e8b; stroke-width: 2"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_1c7e3c83574a_0880ae_p30e227040a">
+  <clipPath id="cpl_1c7e3c83574a_6e06ee_p281132671d">
    <rect x="10.8" y="22.230394" width="436.2" height="312.569606"/>
   </clipPath>
  </defs>
@@ -1803,7 +1938,7 @@ x + 1 &amp; \qhvis x \geq 2
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-08T18:12:54.127320</dc:date>
+    <dc:date>2026-10-13T16:59:47.737322</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1816,8 +1951,8 @@ x + 1 &amp; \qhvis x \geq 2
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_01be0f52e10d_7b7aa7_figure_1">
-  <g id="cpl_01be0f52e10d_7b7aa7_patch_1">
+ <g id="cpl_01be0f52e10d_6bd60a_figure_1">
+  <g id="cpl_01be0f52e10d_6bd60a_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -1826,8 +1961,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_01be0f52e10d_7b7aa7_axes_1">
-   <g id="cpl_01be0f52e10d_7b7aa7_patch_2">
+  <g id="cpl_01be0f52e10d_6bd60a_axes_1">
+   <g id="cpl_01be0f52e10d_6bd60a_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 23.55884 
@@ -1836,12 +1971,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_matplotlib.axis_1">
-    <g id="cpl_01be0f52e10d_7b7aa7_text_1">
+   <g id="cpl_01be0f52e10d_6bd60a_matplotlib.axis_1">
+    <g id="cpl_01be0f52e10d_6bd60a_text_1">
      <!-- $x$ -->
      <g transform="translate(431.478463 313.708776) scale(0.28 -0.28)">
       <defs>
-       <path id="cpl_01be0f52e10d_7b7aa7_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_01be0f52e10d_6bd60a_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -1875,16 +2010,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_matplotlib.axis_2">
-    <g id="cpl_01be0f52e10d_7b7aa7_text_2">
+   <g id="cpl_01be0f52e10d_6bd60a_matplotlib.axis_2">
+    <g id="cpl_01be0f52e10d_6bd60a_text_2">
      <!-- $y$ -->
      <g transform="translate(211.582038 18.132959) scale(0.28 -0.28)">
       <defs>
-       <path id="cpl_01be0f52e10d_7b7aa7_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_01be0f52e10d_6bd60a_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -1918,35 +2053,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_line2d_1">
+   <g id="cpl_01be0f52e10d_6bd60a_line2d_1">
     <defs>
-     <path id="cpl_01be0f52e10d_7b7aa7_m8e7ae22302" d="M 3 0 
+     <path id="cpl_01be0f52e10d_6bd60a_m8f77251fa8" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_m8e7ae22302" x="447" y="290.336977" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_m8f77251fa8" x="447" y="290.336977" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_line2d_2">
+   <g id="cpl_01be0f52e10d_6bd60a_line2d_2">
     <defs>
-     <path id="cpl_01be0f52e10d_7b7aa7_m784531f861" d="M 0 -3 
+     <path id="cpl_01be0f52e10d_6bd60a_mceb4dd9715" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_m784531f861" x="228.9" y="23.55884" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_mceb4dd9715" x="228.9" y="23.55884" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_line2d_3">
+   <g id="cpl_01be0f52e10d_6bd60a_line2d_3">
     <path d="M 10.8 290.226764 
 L 52.601502 289.988913 
 L 78.241531 289.632292 
@@ -1998,30 +2133,30 @@ L 293.106574 30.253913
 L 295.928841 9.256081 
 L 297.231554 -1 
 L 297.231554 -1 
-" clip-path="url(#cpl_01be0f52e10d_7b7aa7_pf46c8a4da8)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_01be0f52e10d_6bd60a_pe298140ecd)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_patch_3">
+   <g id="cpl_01be0f52e10d_6bd60a_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 23.55884 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_patch_4">
+   <g id="cpl_01be0f52e10d_6bd60a_patch_4">
     <path d="M 447 334.8 
 L 447 23.55884 
 " style="fill: none"/>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_patch_5">
+   <g id="cpl_01be0f52e10d_6bd60a_patch_5">
     <path d="M 10.8 290.336977 
 L 447 290.336977 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_patch_6">
+   <g id="cpl_01be0f52e10d_6bd60a_patch_6">
     <path d="M 10.8 23.55884 
 L 447 23.55884 
 " style="fill: none"/>
    </g>
-   <g id="cpl_01be0f52e10d_7b7aa7_text_3">
-    <g id="cpl_01be0f52e10d_7b7aa7_patch_7">
+   <g id="cpl_01be0f52e10d_6bd60a_text_3">
+    <g id="cpl_01be0f52e10d_6bd60a_patch_7">
      <path d="M 28.088796 93.145335 
 L 138.911204 93.145335 
 Q 150.111204 93.145335 150.111204 81.945335 
@@ -2037,7 +2172,7 @@ z
     <!-- $f(x) = e^x$ -->
     <g transform="translate(28.088796 74.994821) scale(0.28 -0.28)">
      <defs>
-      <path id="cpl_01be0f52e10d_7b7aa7_CMMI12-66" d="M 2854 2566 
+      <path id="cpl_01be0f52e10d_6bd60a_CMMI12-66" d="M 2854 2566 
 C 2982 2566 3034 2566 3034 2688 
 C 3034 2752 2982 2752 2867 2752 
 L 2349 2752 
@@ -2066,7 +2201,7 @@ C 1965 688 2278 2376 2310 2566
 L 2854 2566 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_01be0f52e10d_7b7aa7_CMR17-28" d="M 1958 -1561 
+      <path id="cpl_01be0f52e10d_6bd60a_CMR17-28" d="M 1958 -1561 
 C 1958 -1555 1958 -1542 1939 -1523 
 C 1645 -1224 858 -407 858 1581 
 C 858 3569 1632 4379 1946 4697 
@@ -2079,7 +2214,7 @@ C 1312 -1135 1837 -1600 1914 -1600
 C 1946 -1600 1958 -1587 1958 -1561 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_01be0f52e10d_7b7aa7_CMR17-29" d="M 1683 1581 
+      <path id="cpl_01be0f52e10d_6bd60a_CMR17-29" d="M 1683 1581 
 C 1683 2040 1638 2817 1254 3639 
 C 947 4303 422 4768 346 4768 
 C 326 4768 301 4761 301 4729 
@@ -2092,7 +2227,7 @@ C 416 -1600 960 -1128 1274 -426
 C 1594 281 1683 969 1683 1581 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_01be0f52e10d_7b7aa7_CMR17-3d" d="M 4115 2017 
+      <path id="cpl_01be0f52e10d_6bd60a_CMR17-3d" d="M 4115 2017 
 C 4211 2017 4307 2017 4307 2125 
 C 4307 2240 4198 2240 4090 2240 
 L 512 2240 
@@ -2109,7 +2244,7 @@ C 294 896 403 896 512 896
 L 4090 896 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_01be0f52e10d_7b7aa7_CMMI12-65" d="M 1146 1479 
+      <path id="cpl_01be0f52e10d_6bd60a_CMMI12-65" d="M 1146 1479 
 C 1318 1479 1754 1479 2061 1595 
 C 2547 1783 2592 2158 2592 2274 
 C 2592 2558 2349 2816 1926 2816 
@@ -2131,19 +2266,19 @@ L 838 1600
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMMI12-66" transform="scale(0.996264)"/>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMR17-28" transform="translate(58.720305 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMMI12-78" transform="translate(94.001073 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMR17-29" transform="translate(149.435132 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMR17-3d" transform="translate(212.389909 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMMI12-65" transform="translate(311.778706 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_01be0f52e10d_7b7aa7_CMMI12-78" transform="translate(356.990707 36.153639) scale(0.697382)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMMI12-66" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMR17-28" transform="translate(58.720305 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMMI12-78" transform="translate(94.001073 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMR17-29" transform="translate(149.435132 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMR17-3d" transform="translate(212.389909 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMMI12-65" transform="translate(311.778706 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_01be0f52e10d_6bd60a_CMMI12-78" transform="translate(356.990707 36.153639) scale(0.697382)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_01be0f52e10d_7b7aa7_pf46c8a4da8">
+  <clipPath id="cpl_01be0f52e10d_6bd60a_pe298140ecd">
    <rect x="10.8" y="23.55884" width="436.2" height="311.24116"/>
   </clipPath>
  </defs>
@@ -2171,7 +2306,7 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-08T18:12:54.617738</dc:date>
+    <dc:date>2026-10-13T16:59:48.176729</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -2184,8 +2319,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_05dfe385086e_bf1d2b_figure_1">
-  <g id="cpl_05dfe385086e_bf1d2b_patch_1">
+ <g id="cpl_05dfe385086e_723522_figure_1">
+  <g id="cpl_05dfe385086e_723522_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -2194,8 +2329,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_05dfe385086e_bf1d2b_axes_1">
-   <g id="cpl_05dfe385086e_bf1d2b_patch_2">
+  <g id="cpl_05dfe385086e_723522_axes_1">
+   <g id="cpl_05dfe385086e_723522_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 23.55884 
@@ -2204,12 +2339,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_matplotlib.axis_1">
-    <g id="cpl_05dfe385086e_bf1d2b_text_1">
+   <g id="cpl_05dfe385086e_723522_matplotlib.axis_1">
+    <g id="cpl_05dfe385086e_723522_text_1">
      <!-- $x$ -->
      <g transform="translate(431.478463 202.551218) scale(0.28 -0.28)">
       <defs>
-       <path id="cpl_05dfe385086e_bf1d2b_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_05dfe385086e_723522_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -2243,16 +2378,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_05dfe385086e_723522_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_matplotlib.axis_2">
-    <g id="cpl_05dfe385086e_bf1d2b_text_2">
+   <g id="cpl_05dfe385086e_723522_matplotlib.axis_2">
+    <g id="cpl_05dfe385086e_723522_text_2">
      <!-- $y$ -->
      <g transform="translate(55.796323 18.132959) scale(0.28 -0.28)">
       <defs>
-       <path id="cpl_05dfe385086e_bf1d2b_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_05dfe385086e_723522_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -2286,35 +2421,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_05dfe385086e_723522_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_line2d_1">
+   <g id="cpl_05dfe385086e_723522_line2d_1">
     <defs>
-     <path id="cpl_05dfe385086e_bf1d2b_m27eb36d366" d="M 3 0 
+     <path id="cpl_05dfe385086e_723522_m658f4b1867" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_m27eb36d366" x="447" y="179.17942" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_m658f4b1867" x="447" y="179.17942" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_line2d_2">
+   <g id="cpl_05dfe385086e_723522_line2d_2">
     <defs>
-     <path id="cpl_05dfe385086e_bf1d2b_m05c8394850" d="M 0 -3 
+     <path id="cpl_05dfe385086e_723522_m2ea360a609" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_m05c8394850" x="73.114286" y="23.55884" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_m2ea360a609" x="73.114286" y="23.55884" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_line2d_3">
+   <g id="cpl_05dfe385086e_723522_line2d_3">
     <path d="M 73.21263 346.6 
 L 73.449002 314.742133 
 L 73.795129 296.32576 
@@ -2365,30 +2500,30 @@ L 408.926021 135.492574
 L 441.035964 133.124044 
 L 447 132.706979 
 L 447 132.706979 
-" clip-path="url(#cpl_05dfe385086e_bf1d2b_pb107ca6eb8)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_05dfe385086e_723522_p01c0eff629)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_patch_3">
+   <g id="cpl_05dfe385086e_723522_patch_3">
     <path d="M 73.114286 334.8 
 L 73.114286 23.55884 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_patch_4">
+   <g id="cpl_05dfe385086e_723522_patch_4">
     <path d="M 447 334.8 
 L 447 23.55884 
 " style="fill: none"/>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_patch_5">
+   <g id="cpl_05dfe385086e_723522_patch_5">
     <path d="M 10.8 179.17942 
 L 447 179.17942 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_patch_6">
+   <g id="cpl_05dfe385086e_723522_patch_6">
     <path d="M 10.8 23.55884 
 L 447 23.55884 
 " style="fill: none"/>
    </g>
-   <g id="cpl_05dfe385086e_bf1d2b_text_3">
-    <g id="cpl_05dfe385086e_bf1d2b_patch_7">
+   <g id="cpl_05dfe385086e_723522_text_3">
+    <g id="cpl_05dfe385086e_723522_patch_7">
      <path d="M 188.161461 74.619075 
 L 331.952825 74.619075 
 Q 343.152825 74.619075 343.152825 63.419075 
@@ -2404,7 +2539,7 @@ z
     <!-- $f(x) = \ln(x)$ -->
     <g transform="translate(188.161461 56.468562) scale(0.28 -0.28)">
      <defs>
-      <path id="cpl_05dfe385086e_bf1d2b_CMMI12-66" d="M 2854 2566 
+      <path id="cpl_05dfe385086e_723522_CMMI12-66" d="M 2854 2566 
 C 2982 2566 3034 2566 3034 2688 
 C 3034 2752 2982 2752 2867 2752 
 L 2349 2752 
@@ -2433,7 +2568,7 @@ C 1965 688 2278 2376 2310 2566
 L 2854 2566 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_05dfe385086e_bf1d2b_CMR17-28" d="M 1958 -1561 
+      <path id="cpl_05dfe385086e_723522_CMR17-28" d="M 1958 -1561 
 C 1958 -1555 1958 -1542 1939 -1523 
 C 1645 -1224 858 -407 858 1581 
 C 858 3569 1632 4379 1946 4697 
@@ -2446,7 +2581,7 @@ C 1312 -1135 1837 -1600 1914 -1600
 C 1946 -1600 1958 -1587 1958 -1561 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_05dfe385086e_bf1d2b_CMR17-29" d="M 1683 1581 
+      <path id="cpl_05dfe385086e_723522_CMR17-29" d="M 1683 1581 
 C 1683 2040 1638 2817 1254 3639 
 C 947 4303 422 4768 346 4768 
 C 326 4768 301 4761 301 4729 
@@ -2459,7 +2594,7 @@ C 416 -1600 960 -1128 1274 -426
 C 1594 281 1683 969 1683 1581 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_05dfe385086e_bf1d2b_CMR17-3d" d="M 4115 2017 
+      <path id="cpl_05dfe385086e_723522_CMR17-3d" d="M 4115 2017 
 C 4211 2017 4307 2017 4307 2125 
 C 4307 2240 4198 2240 4090 2240 
 L 512 2240 
@@ -2476,7 +2611,7 @@ C 294 896 403 896 512 896
 L 4090 896 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_05dfe385086e_bf1d2b_CMR17-6c" d="M 979 4396 
+      <path id="cpl_05dfe385086e_723522_CMR17-6c" d="M 979 4396 
 L 218 4326 
 L 218 4160 
 C 595 4160 653 4122 653 3817 
@@ -2490,7 +2625,7 @@ C 1005 153 979 178 979 426
 L 979 4396 
 z
 " transform="scale(0.015625)"/>
-      <path id="cpl_05dfe385086e_bf1d2b_CMR17-6e" d="M 2656 1933 
+      <path id="cpl_05dfe385086e_723522_CMR17-6e" d="M 2656 1933 
 C 2656 2259 2592 2790 1837 2790 
 C 1331 2790 1069 2400 973 2144 
 L 966 2144 
@@ -2519,22 +2654,22 @@ L 2656 1933
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMMI12-66" transform="scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-28" transform="translate(58.720305 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMMI12-78" transform="translate(94.001073 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-29" transform="translate(149.435132 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-3d" transform="translate(212.389909 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-6c" transform="translate(311.778706 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-6e" transform="translate(336.649764 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-28" transform="translate(387.545134 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMMI12-78" transform="translate(422.825902 0) scale(0.996264)"/>
-     <use xlink:href="#cpl_05dfe385086e_bf1d2b_CMR17-29" transform="translate(478.259961 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMMI12-66" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-28" transform="translate(58.720305 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMMI12-78" transform="translate(94.001073 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-29" transform="translate(149.435132 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-3d" transform="translate(212.389909 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-6c" transform="translate(311.778706 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-6e" transform="translate(336.649764 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-28" transform="translate(387.545134 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMMI12-78" transform="translate(422.825902 0) scale(0.996264)"/>
+     <use xlink:href="#cpl_05dfe385086e_723522_CMR17-29" transform="translate(478.259961 0) scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_05dfe385086e_bf1d2b_pb107ca6eb8">
+  <clipPath id="cpl_05dfe385086e_723522_p01c0eff629">
    <rect x="10.8" y="23.55884" width="436.2" height="311.24116"/>
   </clipPath>
  </defs>
@@ -2579,8 +2714,6 @@ z
 </div>
 </section>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -2613,24 +2746,6 @@ z
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../../derivasjon/optimering/oppgaver.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>Oppgaver: Optimering</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="oppgaver.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Oppgaver: Grenseverdier</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
