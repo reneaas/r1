@@ -25,55 +25,55 @@ parts:
 
 
 
-  - caption: II. Derivasjon
-    numbered: 1
-    chapters:
-    - file: book/derivasjon/derivasjonsregler_elementærfunksjoner/teori.md
-      # sections:
-      # - file: book/derivasjon/derivasjonsregler_elementærfunksjoner/oppgaver.md
-      #   title: Oppgaver 
+  # - caption: II. Derivasjon
+  #   numbered: 1
+  #   chapters:
+  #   - file: book/derivasjon/derivasjonsregler_elementærfunksjoner/teori.md
+  #     # sections:
+  #     # - file: book/derivasjon/derivasjonsregler_elementærfunksjoner/oppgaver.md
+  #     #   title: Oppgaver 
 
-    - file: book/derivasjon/kjerneregelen/teori.md
-      # sections:
-      # - file: book/derivasjon/kjerneregelen/oppgaver.md
-      #   title: Oppgaver
+  #   - file: book/derivasjon/kjerneregelen/teori.md
+  #     # sections:
+  #     # - file: book/derivasjon/kjerneregelen/oppgaver.md
+  #     #   title: Oppgaver
 
-    - file: book/derivasjon/produktregelen/teori.md
-      # sections:
-      # - file: book/derivasjon/produktregelen/oppgaver.md
-      #   title: Oppgaver
+  #   - file: book/derivasjon/produktregelen/teori.md
+  #     # sections:
+  #     # - file: book/derivasjon/produktregelen/oppgaver.md
+  #     #   title: Oppgaver
 
-    - file: book/derivasjon/brøkregelen/teori.md
-      # sections:
-      # - file: book/derivasjon/brøkregelen/oppgaver.md
-      #   title: Oppgaver
+  #   - file: book/derivasjon/brøkregelen/teori.md
+  #     # sections:
+  #     # - file: book/derivasjon/brøkregelen/oppgaver.md
+  #     #   title: Oppgaver
     
-    - file: book/derivasjon/anvendelser_av_derivasjon/oppgaver.md
-    - file: book/derivasjon/optimering/oppgaver.md
+  #   - file: book/derivasjon/anvendelser_av_derivasjon/oppgaver.md
+  #   - file: book/derivasjon/optimering/oppgaver.md
 
 
-  - caption: III. Grenseverdier, kontinuitet og deriverbarhet
-    numbered: 1
-    chapters:
-    - file: book/grenseverdier_og_kontinuitet/grenseverdier/teori.md
-      sections:
-      - file: book/grenseverdier_og_kontinuitet/grenseverdier/oppgaver.md
-        title: Oppgaver
+  # - caption: III. Grenseverdier, kontinuitet og deriverbarhet
+  #   numbered: 1
+  #   chapters:
+  #   - file: book/grenseverdier_og_kontinuitet/grenseverdier/teori.md
+  #     sections:
+  #     - file: book/grenseverdier_og_kontinuitet/grenseverdier/oppgaver.md
+  #       title: Oppgaver
 
-    # - file: book/grenseverdier_og_kontinuitet/asymptoter/teori.md
-    #   sections:
-    #   - file: book/grenseverdier_og_kontinuitet/asymptoter/oppgaver.md
-    #     title: Oppgaver
+  #   # - file: book/grenseverdier_og_kontinuitet/asymptoter/teori.md
+  #   #   sections:
+  #   #   - file: book/grenseverdier_og_kontinuitet/asymptoter/oppgaver.md
+  #   #     title: Oppgaver
 
-    - file: book/grenseverdier_og_kontinuitet/kontinuitet/teori.md
-      sections:
-      - file: book/grenseverdier_og_kontinuitet/kontinuitet/oppgaver.md
-        title: Oppgaver
+  #   - file: book/grenseverdier_og_kontinuitet/kontinuitet/teori.md
+  #     sections:
+  #     - file: book/grenseverdier_og_kontinuitet/kontinuitet/oppgaver.md
+  #       title: Oppgaver
 
-    - file: book/derivasjon/deriverbarhet/teori.md
-      sections:
-      - file: book/derivasjon/deriverbarhet/oppgaver.md
-        title: Oppgaver
+  #   - file: book/derivasjon/deriverbarhet/teori.md
+  #     sections:
+  #     - file: book/derivasjon/deriverbarhet/oppgaver.md
+  #       title: Oppgaver
     
 
 
@@ -123,7 +123,7 @@ parts:
       - file: book/vektorregning/anvendelser_av_skalarproduktet/oppgaver.md
         title: Oppgaver
 
-    - file: book/vektorregning/vektorfunksjoner/teori.md
+    # - file: book/vektorregning/vektorfunksjoner/teori.md
 
   # - caption: VI. Numeriske metoder
   #   numbered: 1
@@ -155,13 +155,13 @@ parts:
     # - file: book/eksamensøving/h2024/oppgaver.md
 
 
-  - caption: Programmering
-    numbered: false
-    chapters:
-    - file: book/programmering/r2/teori.md
-      sections:
-      - file: book/programmering/r2/oppgaver.md
-        title: Oppgaver
+  # - caption: Programmering
+  #   numbered: false
+  #   chapters:
+  #   - file: book/programmering/r2/teori.md
+  #     sections:
+  #     - file: book/programmering/r2/oppgaver.md
+  #       title: Oppgaver
     
     
   - caption: Jeopardy
@@ -191,7 +191,7 @@ parts:
     # - file: book/oversikt/cas/cas.md
 
 
-  - caption: Eksamensressurser
+  - caption: Digitale verktøy
     numbered: false
     chapters:
     - file: book/eksamensressurser/python.md
